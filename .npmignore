@@ -1,0 +1,5 @@
+.github
+.idea
+.eslintrc
+.gitignore
+release.config.js

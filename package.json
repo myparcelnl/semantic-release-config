@@ -7,6 +7,9 @@
     "email": "edie@myparcel.nl"
   },
   "license": "GPL-3.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@semantic-release/changelog": "^6.0.0",
     "@semantic-release/commit-analyzer": "^9.0.1",
