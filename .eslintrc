@@ -1,0 +1,10 @@
+{
+  "extends": "@myparcel/eslint-config/preset-es6",
+  "env": {
+    "node": true
+  },
+  "rules": {
+    "max-len": "off",
+    "no-template-curly-in-string": "off"
+  }
+}

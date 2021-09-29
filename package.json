@@ -1,0 +1,23 @@
+{
+  "name": "@myparcel/semantic-release-config",
+  "version": "1.0.0",
+  "description": "Reusable configurations for semantic-release",
+  "author": {
+    "name": "Edie Lemoine",
+    "email": "edie@myparcel.nl"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@semantic-release/changelog": "^6.0.0",
+    "@semantic-release/commit-analyzer": "^9.0.1",
+    "@semantic-release/exec": "^6.0.1",
+    "@semantic-release/git": "^10.0.0",
+    "@semantic-release/github": "^8.0.1",
+    "@semantic-release/npm": "^8.0.0",
+    "@semantic-release/release-notes-generator": "^10.0.2"
+  },
+  "devDependencies": {
+    "@myparcel/eslint-config": "^3.3.0",
+    "conventional-changelog-conventionalcommits": "^4.6.1"
+  }
+}
