@@ -1,3 +1,4 @@
+const {backmerge} = require('./src/plugins/backmerge');
 const baseConfig = require('./index');
 const {git} = require('./src/plugins/git');
 const npmConfig = require('./npm');
@@ -8,6 +9,7 @@ module.exports = {
   plugins: [
     ...npmConfig.plugins,
     git,
+    backmerge,
   ],
   extends: null,
 };
