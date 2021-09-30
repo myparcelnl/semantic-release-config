@@ -3,6 +3,42 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/myparcelnl/semantic-release-config/compare/v1.2.0...v1.2.1) (2021-09-30)
+
+
+### Bug Fixes
+
+* **backmerge:** set clearWorkspace to true in defaults ([625787b](https://github.com/myparcelnl/semantic-release-config/commit/625787b6d5e79daf0f8c50a166e194ca5ace5ccd))
+
+
+
+
+
+## [1.2.1](https://github.com/myparcelnl/semantic-release-config/compare/v1.2.0...v1.2.1) (2021-09-30)
+
+
+### Bug Fixes
+
+* **backmerge:** set clearWorkspace to true in defaults ([625787b](https://github.com/myparcelnl/semantic-release-config/commit/625787b6d5e79daf0f8c50a166e194ca5ace5ccd))
+
+## [1.2.1](https://github.com/myparcelnl/semantic-release-config/compare/v1.2.0...v1.2.1) (2021-09-30)
+
+
+### Bug Fixes
+
+* **backmerge:** set clearWorkspace to true in defaults ([625787b](https://github.com/myparcelnl/semantic-release-config/commit/625787b6d5e79daf0f8c50a166e194ca5ace5ccd))
+
+
+
+
+
+## [1.2.1](https://github.com/myparcelnl/semantic-release-config/compare/v1.2.0...v1.2.1) (2021-09-30)
+
+
+### Bug Fixes
+
+* **backmerge:** set clearWorkspace to true in defaults ([625787b](https://github.com/myparcelnl/semantic-release-config/commit/625787b6d5e79daf0f8c50a166e194ca5ace5ccd))
+
 ## [1.2.0](https://github.com/myparcelnl/semantic-release-config/compare/v1.1.0...v1.2.0) (2021-09-30)
 
 
