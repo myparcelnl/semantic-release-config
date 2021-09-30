@@ -1,14 +1,12 @@
-const {addGitPlugin, addBackmergePlugin} = require('./src/plugins');
-const baseConfig = require('./index');
+const {addBackmergePlugin} = require('./src/plugins');
+const gitHubConfig = require('./github');
 const npmConfig = require('./npm');
 
 module.exports = {
-  ...baseConfig,
-  ...npmConfig,
+  extends: null,
   plugins: [
     ...npmConfig.plugins,
-    addGitPlugin(),
+    ...gitHubConfig.plugins,
     addBackmergePlugin(),
   ],
-  extends: null,
 };
