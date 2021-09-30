@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.0](https://github.com/myparcelnl/semantic-release-config/compare/v1.1.0...v1.2.0) (2021-09-30)
+
+
+### :sparkles: New Features
+
+* use functions for plugins ([c7cf7f1](https://github.com/myparcelnl/semantic-release-config/commit/c7cf7f12e57b61f29c7168812356a24812d6d3b9))
+
 ## [1.1.0](https://github.com/myparcelnl/semantic-release-config/compare/v1.0.0...v1.1.0) (2021-09-29)
 
 
