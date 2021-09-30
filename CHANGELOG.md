@@ -3,6 +3,42 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.2](https://github.com/myparcelnl/semantic-release-config/compare/v1.2.1...v1.2.2) (2021-09-30)
+
+
+### Bug Fixes
+
+* **git:** add composer files to assets committed by default ([8156f1f](https://github.com/myparcelnl/semantic-release-config/commit/8156f1fc0e20f3d577ee2c53d8724be1556556a4))
+
+
+
+
+
+## [1.2.2](https://github.com/myparcelnl/semantic-release-config/compare/v1.2.1...v1.2.2) (2021-09-30)
+
+
+### Bug Fixes
+
+* **git:** add composer files to assets committed by default ([8156f1f](https://github.com/myparcelnl/semantic-release-config/commit/8156f1fc0e20f3d577ee2c53d8724be1556556a4))
+
+## [1.2.2](https://github.com/myparcelnl/semantic-release-config/compare/v1.2.1...v1.2.2) (2021-09-30)
+
+
+### Bug Fixes
+
+* **git:** add composer files to assets committed by default ([8156f1f](https://github.com/myparcelnl/semantic-release-config/commit/8156f1fc0e20f3d577ee2c53d8724be1556556a4))
+
+
+
+
+
+## [1.2.2](https://github.com/myparcelnl/semantic-release-config/compare/v1.2.1...v1.2.2) (2021-09-30)
+
+
+### Bug Fixes
+
+* **git:** add composer files to assets committed by default ([8156f1f](https://github.com/myparcelnl/semantic-release-config/commit/8156f1fc0e20f3d577ee2c53d8724be1556556a4))
+
 ## [1.2.1](https://github.com/myparcelnl/semantic-release-config/compare/v1.2.0...v1.2.1) (2021-09-30)
 
 
