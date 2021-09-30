@@ -3,6 +3,7 @@ const {addPlugin} = require('../helpers/addPlugin');
 const defaults = {
   branchName: 'develop',
   message: 'chore(release): rebase published changes [skip ci]',
+  clearWorkspace: true,
 };
 
 /**
