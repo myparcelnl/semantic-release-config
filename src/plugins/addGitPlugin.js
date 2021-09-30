@@ -1,6 +1,14 @@
 const {addPlugin} = require('../helpers/addPlugin');
 
 const defaults = {
+  assets: [
+    'CHANGELOG.md',
+    'package.json',
+    'package-lock.json',
+    'npm-shrinkwrap.json',
+    'composer.json',
+    'composer.lock',
+  ],
   message: 'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
 };
 
