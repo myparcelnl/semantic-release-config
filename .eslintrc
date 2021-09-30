@@ -4,6 +4,7 @@
     "node": true
   },
   "rules": {
+    "jsdoc/valid-types": "off",
     "max-len": "off",
     "no-template-curly-in-string": "off"
   }

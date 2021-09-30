@@ -60,6 +60,21 @@ used with each plugin, see `./src/plugins/<plugin>.js`.
 - [@semantic-release/github]
 - [@semantic-release/git]
 
+## Debugging
+
+You can run the following command in your project to test your semantic-release configuration:
+
+```shell
+npx semantic-release --dry-run --debug --branches=$(git branch --show-current)
+```
+
+Flags used:
+
+- `--dry-run`: If this is on, no files are changed and nothing is actually "released".
+- `--debug`: Enables debug mode to show a lot more output.
+- `--branches`: Set the current branch as a release branch. If you don't pass this and are not on a release branch
+  semantic-release will not process your commits.
+
 [semantic-release config file]: https://semantic-release.gitbook.io/semantic-release/usage/configuration
 [@semantic-release/changelog]: https://github.com/semantic-release/changelog
 [@semantic-release/commit-analyzer]: https://github.com/semantic-release/commit-analyzer

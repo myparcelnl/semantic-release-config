@@ -1,12 +1,10 @@
-const {changelog} = require('./src/plugins/changelog');
-const {commitAnalyzer} = require('./src/plugins/commitAnalyzer');
-const {releaseNotesGenerator} = require('./src/plugins/releaseNotesGenerator');
+const {addCommitAnalyzerPlugin, addReleaseNotesGeneratorPlugin, addChangelogPlugin} = require('./src/plugins');
 
 module.exports = {
   preset: 'conventionalcommits',
   plugins: [
-    commitAnalyzer,
-    releaseNotesGenerator,
-    changelog,
+    addCommitAnalyzerPlugin(),
+    addReleaseNotesGeneratorPlugin(),
+    addChangelogPlugin(),
   ],
 };
