@@ -1,12 +1,18 @@
 const baseConfig = require('./index');
-const gitHubConfig = require('./github');
-const npmConfig = require('./npm');
+const {
+  addNpmPlugin, addCommitAnalyzerPlugin, addReleaseNotesGeneratorPlugin, addChangelogPlugin, addGitHubPlugin,
+  addGitPlugin,
+} = require('./src/plugins');
 
 module.exports = {
   ...baseConfig,
   extends: null,
   plugins: [
-    ...npmConfig.plugins,
-    ...gitHubConfig.plugins,
+    addCommitAnalyzerPlugin(),
+    addReleaseNotesGeneratorPlugin(),
+    addChangelogPlugin(),
+    addNpmPlugin(),
+    addGitHubPlugin(),
+    addGitPlugin(),
   ],
 };
