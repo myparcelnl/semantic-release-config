@@ -3,6 +3,9 @@
   "env": {
     "node": true
   },
+  "parserOptions": {
+    "requireConfigFile": false
+  },
   "rules": {
     "jsdoc/valid-types": "off",
     "max-len": "off",
