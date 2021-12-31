@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.3.1](https://github.com/myparcelnl/semantic-release-config/compare/v1.3.0...v1.3.1) (2021-12-31)
+
+
+### :bug: Bug Fixes
+
+* **composer:** add missing properties from main config ([afe6058](https://github.com/myparcelnl/semantic-release-config/commit/afe605858dfdca7a96aca6e8f3971225da93a57b))
+
 ## [1.3.0](https://github.com/myparcelnl/semantic-release-config/compare/v1.2.3...v1.3.0) (2021-12-31)
 
 
