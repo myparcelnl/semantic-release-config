@@ -6,7 +6,7 @@ const {addPlugin} = require('../helpers/addPlugin');
  * @returns {[string, Object]}
  */
 const addComposerPlugin = (options = {}) => addPlugin(
-  '@ambimax/semantic-release-composer',
+  '@iwavesmedia/semantic-release-composer',
   options,
 );
 
