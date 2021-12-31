@@ -16,7 +16,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: myparcelnl/actions/npm-install@v1
+      - uses: myparcelnl/actions/yarn-install@v1
 
       - name: Run semantic release
         run: npx semantic-release

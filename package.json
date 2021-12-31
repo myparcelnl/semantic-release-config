@@ -11,6 +11,7 @@
     "access": "public"
   },
   "dependencies": {
+    "@iwavesmedia/semantic-release-composer": "^1.0.0",
     "@saithodev/semantic-release-backmerge": "^1.5.3",
     "@semantic-release/changelog": "^6.0.0",
     "@semantic-release/commit-analyzer": "^9.0.1",
@@ -19,9 +20,12 @@
     "@semantic-release/github": "^8.0.1",
     "@semantic-release/npm": "^8.0.0",
     "@semantic-release/release-notes-generator": "^10.0.2",
-    "conventional-changelog-conventionalcommits": "^4.6.1"
+    "conventional-changelog-conventionalcommits": "^4.6.1",
+    "semantic-release": "^18.0.1"
   },
   "devDependencies": {
-    "@myparcel/eslint-config": "^3.3.0"
+    "@babel/core": "^7.16.5",
+    "@babel/eslint-parser": "^7.16.5",
+    "@myparcel/eslint-config": "^3.4.2"
   }
 }
