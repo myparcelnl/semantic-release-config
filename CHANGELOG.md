@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.0](https://github.com/myparcelnl/semantic-release-config/compare/v1.2.3...v1.3.0) (2021-12-31)
+
+
+### :sparkles: New Features
+
+* add composer preset ([dfbfa9f](https://github.com/myparcelnl/semantic-release-config/commit/dfbfa9f2182aa1c960bb793a455be5ec1fde406c))
+
 ### [1.2.3](https://github.com/myparcelnl/semantic-release-config/compare/v1.2.2...v1.2.3) (2021-10-04)
 
 
