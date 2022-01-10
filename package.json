@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@iwavesmedia/semantic-release-composer": "^1.0.0",
-    "@saithodev/semantic-release-backmerge": "^1.5.3",
+    "@saithodev/semantic-release-backmerge": "^2.1.0",
     "@semantic-release/changelog": "^6.0.0",
     "@semantic-release/commit-analyzer": "^9.0.1",
     "@semantic-release/exec": "^6.0.1",
