@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.3.2](https://github.com/myparcelnl/semantic-release-config/compare/v1.3.1...v1.3.2) (2022-01-10)
+
+
+### :bug: Bug Fixes
+
+* use correct base properties ([9466bb4](https://github.com/myparcelnl/semantic-release-config/commit/9466bb4fded23ef9eabd6145d1a26e8b9d7165ba))
+
 ### [1.3.1](https://github.com/myparcelnl/semantic-release-config/compare/v1.3.0...v1.3.1) (2021-12-31)
 
 
