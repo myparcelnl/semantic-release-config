@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.0](https://github.com/myparcelnl/semantic-release-config/compare/v1.3.2...v1.4.0) (2022-01-14)
+
+
+### :sparkles: New Features
+
+* add github-composer config ([ea83dac](https://github.com/myparcelnl/semantic-release-config/commit/ea83dacbd91909e34cafb4a67969153c691ed279))
+* add github-npm config ([01475eb](https://github.com/myparcelnl/semantic-release-config/commit/01475eb1e0675292afbb20b324795fbfcc1484df))
+
 ### [1.3.2](https://github.com/myparcelnl/semantic-release-config/compare/v1.3.1...v1.3.2) (2022-01-10)
 
 
