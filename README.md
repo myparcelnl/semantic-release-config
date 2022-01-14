@@ -82,6 +82,15 @@ used with each plugin, see `./src/plugins/<plugin>.js`.
 - [@semantic-release/github]
 - [@semantic-release/git]
 
+### GitHub + NPM
+
+> `@myparcel/semantic-release-config/github-npm`
+
+- [Base plugins](#base-config)
+- [@semantic-release/npm]
+- [@semantic-release/github]
+- [@semantic-release/git]
+
 ## Debugging
 
 You can run the following command in your project to test your semantic-release configuration:
