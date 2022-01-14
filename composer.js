@@ -1,4 +1,3 @@
-const {addGitPlugin} = require('./src/plugins');
 const mainConfig = require('./index');
 const {addComposerPlugin} = require('./src/plugins/addComposerPlugin');
 
@@ -8,6 +7,5 @@ module.exports = {
   plugins: [
     ...mainConfig.plugins,
     addComposerPlugin(),
-    addGitPlugin(),
   ],
 };
