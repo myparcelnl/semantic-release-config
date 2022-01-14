@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0](https://github.com/myparcelnl/semantic-release-config/compare/v1.4.0...v2.0.0) (2022-01-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* **composer:** remove git plugin
+
+### :bug: Bug Fixes
+
+* **composer:** remove git plugin ([1b5e842](https://github.com/myparcelnl/semantic-release-config/commit/1b5e842afaf7c290ad2bb1eca897320ee4f52f71))
+
 ## [1.4.0](https://github.com/myparcelnl/semantic-release-config/compare/v1.3.2...v1.4.0) (2022-01-14)
 
 
