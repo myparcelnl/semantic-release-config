@@ -1,16 +1,22 @@
 # MyParcel semantic-release configuration
 
+[![npm](https://img.shields.io/npm/v/@myparcel/semantic-release-config)](https://www.npmjs.com/package/@myparcel/semantic-release-config/)
+
 This package contains multiple semantic-release presets. Additional information, documentation and guides on
 semantic-release can be found on https://eslint.org/
 
-![Version on NPM](https://img.shields.io/npm/v/@myparcel/semantic-release-config)
-
 ## Usage
 
-Install the package via npm:
+Install the package via yarn:
 
 ```
-$ npm i -D @myparcel/semantic-release-config
+yarn add -D @myparcel/semantic-release-config
+```
+
+or npm:
+
+```
+npm i -D @myparcel/semantic-release-config
 ```
 
 Create a [semantic-release config file], if you haven't already, and add the following: (JavaScript example)
@@ -48,15 +54,22 @@ used with each plugin, see `./src/plugins/<plugin>.js`.
 
 > `@myparcel/semantic-release-config/npm`
 
-- [Base plugins](#Base config)
-- [@semantic-release/github]
-- [@semantic-release/git]
+- [Base plugins](#base-config)
+- [@semantic-release/npm]
+
+### Composer
+
+> `@myparcel/semantic-release-config/npm`
+
+- [Base plugins](#base-config)
+- [@iwavesmedia/semantic-release-composer]
+- [@semantic-release/npm]
 
 ### GitHub
 
 > `@myparcel/semantic-release-config/github`
 
-- [Base plugins](#Base config)
+- [Base plugins](#base-config)
 - [@semantic-release/github]
 - [@semantic-release/git]
 
@@ -75,10 +88,11 @@ Flags used:
 - `--branches`: Set the current branch as a release branch. If you don't pass this and are not on a release branch
   semantic-release will not process your commits.
 
-[semantic-release config file]: https://semantic-release.gitbook.io/semantic-release/usage/configuration
+[@iwavesmedia/semantic-release-composer]: https://github.com/ambimax/semantic-release-composer#readme
 [@semantic-release/changelog]: https://github.com/semantic-release/changelog
 [@semantic-release/commit-analyzer]: https://github.com/semantic-release/commit-analyzer
 [@semantic-release/git]: https://github.com/semantic-release/git
 [@semantic-release/github]: https://github.com/semantic-release/github
 [@semantic-release/npm]: https://github.com/semantic-release/npm
 [@semantic-release/release-notes-generator]: https://github.com/semantic-release/release-notes-generator
+[semantic-release config file]: https://semantic-release.gitbook.io/semantic-release/usage/configuration
