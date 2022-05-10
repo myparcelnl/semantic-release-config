@@ -2,14 +2,19 @@
   "name": "@myparcel/semantic-release-config",
   "version": "2.0.0",
   "description": "Reusable configurations for semantic-release",
-  "author": {
-    "name": "Edie Lemoine",
-    "email": "edie@myparcel.nl"
+  "keywords": [
+    "semantic-release"
+  ],
+  "homepage": "https://github.com/myparcelnl/semantic-release-config#readme",
+  "bugs": {
+    "url": "https://github.com/myparcelnl/semantic-release-config/issues"
   },
-  "license": "GPL-3.0",
-  "publishConfig": {
-    "access": "public"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/myparcelnl/semantic-release-config.git"
   },
+  "license": "MIT",
+  "author": "Edie Lemoine <edie@myparcel.nl>",
   "dependencies": {
     "@iwavesmedia/semantic-release-composer": "^1.0.0",
     "@saithodev/semantic-release-backmerge": "^2.1.2",
@@ -27,5 +32,8 @@
     "@babel/core": "^7.17.8",
     "@babel/eslint-parser": "^7.17.0",
     "@myparcel/eslint-config": "^3.4.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
