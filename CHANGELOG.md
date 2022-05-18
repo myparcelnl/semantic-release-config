@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.0](https://github.com/myparcelnl/semantic-release-config/compare/v2.0.0...v3.0.0) (2022-05-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* backmerge plugin was removed
+
+* update dependencies ([959d3ab](https://github.com/myparcelnl/semantic-release-config/commit/959d3ab8e220683299de830deb5a31c036232aa1))
+
 ## [2.0.0](https://github.com/myparcelnl/semantic-release-config/compare/v1.4.0...v2.0.0) (2022-01-14)
 
 
