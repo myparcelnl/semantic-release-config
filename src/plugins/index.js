@@ -1,4 +1,3 @@
-const {addBackmergePlugin} = require('./addBackmergePlugin');
 const {addChangelogPlugin} = require('./addChangelogPlugin');
 const {addCommitAnalyzerPlugin} = require('./addCommitAnalyzerPlugin');
 const {addComposerPlugin} = require('./addComposerPlugin');
@@ -9,7 +8,6 @@ const {addNpmPlugin} = require('./addNpmPlugin');
 const {addReleaseNotesGeneratorPlugin} = require('./addReleaseNotesGeneratorPlugin');
 
 module.exports = {
-  addBackmergePlugin,
   addChangelogPlugin,
   addCommitAnalyzerPlugin,
   addComposerPlugin,
