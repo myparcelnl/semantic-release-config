@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.0.1](https://github.com/myparcelnl/semantic-release-config/compare/v3.0.0...v3.0.1) (2022-06-15)
+
+
+### :bug: Bug Fixes
+
+* **git:** add yarn and pnpm lockfiles to default assets ([3732b6d](https://github.com/myparcelnl/semantic-release-config/commit/3732b6d2e53d5c82902d1d822e537f1d4083c26c))
+
 ## [3.0.0](https://github.com/myparcelnl/semantic-release-config/compare/v2.0.0...v3.0.0) (2022-05-18)
 
 
