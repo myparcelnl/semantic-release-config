@@ -55,4 +55,4 @@ const addReleaseNotesGeneratorPlugin = (options = {}) => addPlugin(
   defaults,
 );
 
-module.exports = {addReleaseNotesGeneratorPlugin};
+module.exports = {addReleaseNotesGeneratorPlugin, releaseNotesGeneratorPluginDefaults: defaults};

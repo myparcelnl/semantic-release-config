@@ -15,4 +15,4 @@ const addChangelogPlugin = (options = {}) => addPlugin(
   defaults,
 );
 
-module.exports = {addChangelogPlugin};
+module.exports = {addChangelogPlugin, changelogPluginDefaults: defaults};

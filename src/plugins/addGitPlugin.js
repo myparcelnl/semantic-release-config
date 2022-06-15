@@ -1,4 +1,4 @@
- const {addPlugin} = require('../helpers/addPlugin');
+const {addPlugin} = require('../helpers/addPlugin');
 
 const defaults = {
   assets: [
@@ -25,4 +25,4 @@ const addGitPlugin = (options = {}) => addPlugin(
   defaults,
 );
 
-module.exports = {addGitPlugin};
+module.exports = {addGitPlugin, gitPluginDefaults: defaults};
