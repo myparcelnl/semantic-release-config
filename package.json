@@ -24,13 +24,13 @@
     "@semantic-release/github": "^8.0.4",
     "@semantic-release/npm": "^9.0.1",
     "@semantic-release/release-notes-generator": "^10.0.3",
-    "conventional-changelog-conventionalcommits": "^4.6.3",
-    "semantic-release": "^19.0.2"
+    "conventional-changelog-conventionalcommits": "^4.0.0 || ^5.0.0",
+    "semantic-release": "^19.0.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.12",
-    "@babel/eslint-parser": "^7.17.0",
-    "@myparcel/eslint-config": "^3.5.0"
+    "@babel/core": "^7.18.5",
+    "@babel/eslint-parser": "^7.18.2",
+    "@myparcel/eslint-config": "^3.6.1"
   },
   "publishConfig": {
     "access": "public"
