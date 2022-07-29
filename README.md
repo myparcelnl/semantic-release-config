@@ -3,7 +3,7 @@
 [![npm](https://img.shields.io/npm/v/@myparcel/semantic-release-config)](https://www.npmjs.com/package/@myparcel/semantic-release-config/)
 
 This package contains multiple semantic-release presets. Additional information, documentation and guides on
-semantic-release can be found on https://eslint.org/
+semantic-release can be found [here](https://github.com/semantic-release/semantic-release)
 
 ## Usage
 
@@ -75,7 +75,7 @@ used with each plugin, see `./src/plugins/<plugin>.js`.
 
 ### GitHub + Composer
 
-> `@myparcel/semantic-release-config/github-npm`
+> `@myparcel/semantic-release-config/github-composer`
 
 - [Base plugins](#base-config)
 - [@iwavesmedia/semantic-release-composer]
