@@ -6,8 +6,10 @@ module.exports = {
     '+([0-9])?(.{+([0-9]),x}).x',
     'master',
     'main',
-    {name: 'beta', prerelease: true},
     {name: 'alpha', prerelease: true},
+    {name: 'beta', prerelease: true},
+    {name: 'next', prerelease: true},
+    {name: 'rc', prerelease: true},
   ],
   plugins: [
     addCommitAnalyzerPlugin(),
