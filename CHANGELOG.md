@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.0](https://github.com/myparcelnl/semantic-release-config/compare/v4.0.0...v4.1.0) (2022-12-07)
+
+
+### :sparkles: New Features
+
+* treat next and rc branches as prerelease ([6a7fb83](https://github.com/myparcelnl/semantic-release-config/commit/6a7fb8378c342694c5a1c7d90f94d01dac3cb755))
+
 ## [3.1.0](https://github.com/myparcelnl/semantic-release-config/compare/v3.0.1...v3.1.0) (2022-06-15)
 
 
