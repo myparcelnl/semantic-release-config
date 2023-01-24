@@ -16,7 +16,16 @@ module.exports = {
     [
       '@semantic-release/exec',
       {
-        verifyReleaseCmd: 'echo "version=${nextRelease.version}" >> $GITHUB_OUTPUT',
+        verifyReleaseCmd: `
+          echo "last-version=\${lastRelease.version}" >> $GITHUB_OUTPUT
+          echo "next-version=\${nextRelease.version}" >> $GITHUB_OUTPUT
+          echo "release-type=\${nextRelease.type}" >> $GITHUB_OUTPUT
+        `
+          .trim()
+          .split('\n')
+          .filter(Boolean)
+          .map((line) => line.trim())
+          .join(' && '),
       },
     ],
     addReleaseNotesGeneratorPlugin(),
