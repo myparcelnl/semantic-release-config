@@ -23,7 +23,11 @@ jobs:
       - uses: myparcelnl/actions/yarn2-install@v3
 
       - name: 'Run semantic release'
+        id: semantic-release
         run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ steps.credentials.outputs.token }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: 'Check outputs'
+        run: echo ${{ steps.semantic-release.outputs }}
