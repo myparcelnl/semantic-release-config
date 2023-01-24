@@ -1,8 +1,9 @@
 {
-  "extends": "@myparcel/eslint-config/preset-es6",
-  "env": {
-    "node": true
-  },
+  "extends": [
+    "@myparcel-eslint/eslint-config-prettier",
+    "@myparcel-eslint/eslint-config-esnext",
+    "@myparcel-eslint/eslint-config-node"
+  ],
   "parserOptions": {
     "requireConfigFile": false
   },
