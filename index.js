@@ -13,6 +13,12 @@ module.exports = {
   ],
   plugins: [
     addCommitAnalyzerPlugin(),
+    [
+      '@semantic-release/exec',
+      {
+        verifyReleaseCmd: 'echo "version=${nextRelease.version}" >> $GITHUB_OUTPUT',
+      },
+    ],
     addReleaseNotesGeneratorPlugin(),
     addChangelogPlugin(),
   ],
