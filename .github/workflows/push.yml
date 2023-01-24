@@ -1,0 +1,29 @@
+name: 'Push to main'
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  process:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: myparcelnl/actions/setup-git-credentials@v3
+        id: credentials
+        with:
+          app-id: ${{ secrets.MYPARCEL_APP_ID }}
+          private-key: ${{ secrets.MYPARCEL_APP_PRIVATE_KEY }}
+
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          token: ${{ steps.credentials.outputs.token }}
+
+      - uses: myparcelnl/actions/yarn2-install@v3
+
+      - name: 'Run semantic release'
+        run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ steps.credentials.outputs.token }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
