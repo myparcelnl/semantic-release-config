@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.3](https://github.com/myparcelnl/semantic-release-config/compare/v4.2.2...v4.2.3) (2023-02-06)
+
+
+### :bug: Bug Fixes
+
+* use correct version branch regex ([7f536aa](https://github.com/myparcelnl/semantic-release-config/commit/7f536aaabc4506eee1af760c11fb9c6c20ba331a))
+
 ## [4.2.2](https://github.com/myparcelnl/semantic-release-config/compare/v4.2.1...v4.2.2) (2023-01-25)
 
 
