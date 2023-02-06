@@ -3,7 +3,7 @@ const {addCommitAnalyzerPlugin, addReleaseNotesGeneratorPlugin, addChangelogPlug
 module.exports = {
   preset: 'conventionalcommits',
   branches: [
-    '+([0-9])?(.{+([0-9]),x}).x',
+    '(\\d+)(\\.\\d+)?\\.x',
     'master',
     'main',
     {name: 'alpha', prerelease: true},
