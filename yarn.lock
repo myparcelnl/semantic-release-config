@@ -125,12 +125,13 @@ __metadata:
   linkType: hard
 
 "@myparcel-eslint/eslint-config-node@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@myparcel-eslint/eslint-config-node@npm:1.2.0"
+  version: 1.2.3
+  resolution: "@myparcel-eslint/eslint-config-node@npm:1.2.3"
   dependencies:
-    "@myparcel-eslint/eslint-config": ^1.2.0
+    "@myparcel-eslint/eslint-config": ^1.2.3
+  peerDependencies:
     eslint: "*"
-  checksum: acaf097dd89cbac607e78b10a0735bb06659e832b9875d6bd2d79b4c88b4e85a158497540d2904d533a0326161085d60c22b742b8a89769d0fa83142f93fb117
+  checksum: f95ca60cb09034ff66f541781ced8acd53c8a6965816791d0c9fcc751706ac3f4e9714c877709a0f37a27229bbe0e01111506c7937cb9d32ada98a669909d6a3
   languageName: node
   linkType: hard
 
@@ -153,6 +154,15 @@ __metadata:
   dependencies:
     eslint: "*"
   checksum: b60fbce24a013c453527f5a71d3f7a03227c108f15d6adc0c6484f9bdab44eeac5cda31686359751d1da1f822401888143fea042213646df18d3e48e6eca32eb
+  languageName: node
+  linkType: hard
+
+"@myparcel-eslint/eslint-config@npm:^1.2.3":
+  version: 1.2.3
+  resolution: "@myparcel-eslint/eslint-config@npm:1.2.3"
+  peerDependencies:
+    eslint: "*"
+  checksum: c1f191c0265f5de542f92496bf04322f32f9513f57fe53192132523383c2d7596c9907fcd5c0c53f4a695e9dde6376c6403fc024614846585d596741bf0e9ec4
   languageName: node
   linkType: hard
 
