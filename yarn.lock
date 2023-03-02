@@ -135,15 +135,16 @@ __metadata:
   linkType: hard
 
 "@myparcel-eslint/eslint-config-prettier@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@myparcel-eslint/eslint-config-prettier@npm:1.2.0"
+  version: 1.2.3
+  resolution: "@myparcel-eslint/eslint-config-prettier@npm:1.2.3"
   dependencies:
     "@myparcel/prettier-config": "*"
-    eslint: "*"
     eslint-config-prettier: "*"
     eslint-plugin-prettier: "*"
+  peerDependencies:
+    eslint: "*"
     prettier: "*"
-  checksum: 40b45e3a12dc634142b2fc47c550592a27408eb65d42d3a04c2487afaa71acfafea58024bddeffee575ab60b1374a59c37705bc267ac3741212c4983e70e71b2
+  checksum: 0402ac6ad6bcc09725eab3b21e8970be3dbdb658c680e02a241e606d938f663c71dd1f68943afc42f7126b1eff28f9edccb61fb4b316b1cac58d6fcc0c2b482d
   languageName: node
   linkType: hard
 
@@ -3879,15 +3880,6 @@ __metadata:
   dependencies:
     fast-diff: ^1.1.2
   checksum: 00ce8011cf6430158d27f9c92cfea0a7699405633f7f1d4a45f07e21bf78e99895911cbcdc3853db3a824201a7c745bd49bfea8abd5fb9883e765a90f74f8392
-  languageName: node
-  linkType: hard
-
-"prettier@npm:*":
-  version: 2.8.3
-  resolution: "prettier@npm:2.8.3"
-  bin:
-    prettier: bin-prettier.js
-  checksum: 92f2ceb522d454370e02082aa74ad27388672f7cee8975028b59517c069fe643bdc73e322675c8faf2ff173d7a626d1a6389f26b474000308e793aa25fff46e5
   languageName: node
   linkType: hard
 
