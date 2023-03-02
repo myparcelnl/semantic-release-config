@@ -104,23 +104,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@myparcel-eslint/eslint-config-es6@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@myparcel-eslint/eslint-config-es6@npm:1.2.0"
+"@myparcel-eslint/eslint-config-es6@npm:^1.2.3":
+  version: 1.2.3
+  resolution: "@myparcel-eslint/eslint-config-es6@npm:1.2.3"
   dependencies:
-    "@myparcel-eslint/eslint-config": ^1.2.0
+    "@myparcel-eslint/eslint-config": ^1.2.3
+  peerDependencies:
     eslint: "*"
-  checksum: ab4c5bafab31ccbba89971e71f2d006a1707a0181bffc3bbb9509893ca6c23426cf967fb110b80856e85a84545a3eb759ee7f5c2055c9737db5fcfa6e0d52e30
+  checksum: ee3bc4ec8fd742bb362baddffcbb15d064f806ee229eea51afabb36cb05a7ce68d0c8a2f1f77c248d1f4edf6bcfc8c7626b02d0ec07bdc2f06e59d5d3ed4c7e6
   languageName: node
   linkType: hard
 
 "@myparcel-eslint/eslint-config-esnext@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@myparcel-eslint/eslint-config-esnext@npm:1.2.0"
+  version: 1.2.3
+  resolution: "@myparcel-eslint/eslint-config-esnext@npm:1.2.3"
   dependencies:
-    "@myparcel-eslint/eslint-config-es6": ^1.2.0
+    "@myparcel-eslint/eslint-config-es6": ^1.2.3
+  peerDependencies:
     eslint: "*"
-  checksum: e34388a3492833da902b1040ceb9f9febf89c18e93884641f5060bb1793a3a0b194fb28a6f78b4f87d751fb2e329435e2b62ea2d69a3948425b860145fa7c29b
+  checksum: 7c2e22c3673ebc49e4975363bc40bae549127ffb3f2e19876b8b2701d0b749cbd029cb0e3ee2b0ef833b54b7655cd291ba3bb4ac8153caba538a40c29ccd4647
   languageName: node
   linkType: hard
 
@@ -153,6 +155,15 @@ __metadata:
   dependencies:
     eslint: "*"
   checksum: b60fbce24a013c453527f5a71d3f7a03227c108f15d6adc0c6484f9bdab44eeac5cda31686359751d1da1f822401888143fea042213646df18d3e48e6eca32eb
+  languageName: node
+  linkType: hard
+
+"@myparcel-eslint/eslint-config@npm:^1.2.3":
+  version: 1.2.3
+  resolution: "@myparcel-eslint/eslint-config@npm:1.2.3"
+  peerDependencies:
+    eslint: "*"
+  checksum: c1f191c0265f5de542f92496bf04322f32f9513f57fe53192132523383c2d7596c9907fcd5c0c53f4a695e9dde6376c6403fc024614846585d596741bf0e9ec4
   languageName: node
   linkType: hard
 
