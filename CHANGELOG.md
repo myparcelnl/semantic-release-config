@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.0](https://github.com/myparcelnl/semantic-release-config/compare/v4.3.0...v5.0.0) (2023-04-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** update semantic-release to v21.0.0
+* **deps:** update @semantic-release/npm to v9.0.0
+
+* **deps:** update dependencies ([1c86a4d](https://github.com/myparcelnl/semantic-release-config/commit/1c86a4dd162d94a77722577906767d2cdfcd2fd6))
+
 ## [4.3.0](https://github.com/myparcelnl/semantic-release-config/compare/v4.2.3...v4.3.0) (2023-04-12)
 
 
