@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.3.0](https://github.com/myparcelnl/semantic-release-config/compare/v4.2.3...v4.3.0) (2023-04-12)
+
+
+### :sparkles: New Features
+
+* move github actions snippet to separate plugin ([24ba30a](https://github.com/myparcelnl/semantic-release-config/commit/24ba30ac32e4d004277c9f1dc9da1b1dffba555e))
+
 ## [4.2.3](https://github.com/myparcelnl/semantic-release-config/compare/v4.2.2...v4.2.3) (2023-02-06)
 
 
