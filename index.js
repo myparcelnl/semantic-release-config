@@ -1,4 +1,9 @@
-const {addCommitAnalyzerPlugin, addReleaseNotesGeneratorPlugin, addChangelogPlugin} = require('./src/plugins');
+const {
+  addChangelogPlugin,
+  addCommitAnalyzerPlugin,
+  addGitHubActionsOutputPlugin,
+  addReleaseNotesGeneratorPlugin,
+} = require('./src/plugins');
 
 module.exports = {
   preset: 'conventionalcommits',
@@ -13,18 +18,7 @@ module.exports = {
   ],
   plugins: [
     addCommitAnalyzerPlugin(),
-    [
-      '@semantic-release/exec',
-      {
-        verifyReleaseCmd: `sh -c '
-          if [ -n "$GITHUB_OUTPUT" ]; then
-            echo "last-version=\${lastRelease.version}" >> $GITHUB_OUTPUT
-            echo "next-version=\${nextRelease.version}" >> $GITHUB_OUTPUT
-            echo "release-type=\${nextRelease.type}" >> $GITHUB_OUTPUT
-          fi
-        '`,
-      },
-    ],
+    addGitHubActionsOutputPlugin(),
     addReleaseNotesGeneratorPlugin(),
     addChangelogPlugin(),
   ],
