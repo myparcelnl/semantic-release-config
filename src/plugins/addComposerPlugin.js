@@ -5,9 +5,6 @@ const {addPlugin} = require('../helpers/addPlugin');
  *
  * @returns {[string, Object]}
  */
-const addComposerPlugin = (options = {}) => addPlugin(
-  '@iwavesmedia/semantic-release-composer',
-  options,
-);
+const addComposerPlugin = (options = {}) => addPlugin('@iwavesmedia/semantic-release-composer', options);
 
 module.exports = {addComposerPlugin};

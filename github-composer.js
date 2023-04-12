@@ -4,10 +4,5 @@ const mainConfig = require('./index');
 module.exports = {
   ...mainConfig,
   extends: '@myparcel/semantic-release-config/github',
-  plugins: [
-    ...mainConfig.plugins,
-    addComposerPlugin(),
-    addGitHubPlugin(),
-    addGitPlugin(),
-  ],
+  plugins: [...mainConfig.plugins, addComposerPlugin(), addGitHubPlugin(), addGitPlugin()],
 };

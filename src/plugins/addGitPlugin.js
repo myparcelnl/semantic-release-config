@@ -19,10 +19,6 @@ const defaults = {
  *
  * @returns {[string, Object]}
  */
-const addGitPlugin = (options = {}) => addPlugin(
-  '@semantic-release/git',
-  options,
-  defaults,
-);
+const addGitPlugin = (options = {}) => addPlugin('@semantic-release/git', options, defaults);
 
 module.exports = {addGitPlugin, gitPluginDefaults: defaults};

@@ -5,9 +5,6 @@ const {addPlugin} = require('../helpers/addPlugin');
  *
  * @returns {[string, Object]}
  */
-const addCommitAnalyzerPlugin = (options = {}) => addPlugin(
-  '@semantic-release/commit-analyzer',
-  options,
-);
+const addCommitAnalyzerPlugin = (options = {}) => addPlugin('@semantic-release/commit-analyzer', options);
 
 module.exports = {addCommitAnalyzerPlugin};

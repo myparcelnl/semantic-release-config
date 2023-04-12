@@ -5,9 +5,6 @@ const {addPlugin} = require('../helpers/addPlugin');
  *
  * @returns {[string, Object]}
  */
-const addNpmPlugin = (options = {}) => addPlugin(
-  '@semantic-release/npm',
-  options,
-);
+const addNpmPlugin = (options = {}) => addPlugin('@semantic-release/npm', options);
 
 module.exports = {addNpmPlugin};
