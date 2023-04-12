@@ -31,7 +31,9 @@
   "devDependencies": {
     "@myparcel-eslint/eslint-config-esnext": "^1.2.0",
     "@myparcel-eslint/eslint-config-node": "^1.2.0",
-    "@myparcel-eslint/eslint-config-prettier": "^1.2.0"
+    "@myparcel-eslint/eslint-config-prettier": "^1.2.0",
+    "eslint": "^8.38.0",
+    "prettier": "^2.8.7"
   },
   "packageManager": "yarn@3.3.0",
   "publishConfig": {
