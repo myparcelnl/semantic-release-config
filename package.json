@@ -26,7 +26,7 @@
     "@semantic-release/npm": "^10.0.0",
     "@semantic-release/release-notes-generator": "^10.0.0",
     "conventional-changelog-conventionalcommits": "^4.0.0 || ^5.0.0",
-    "semantic-release": "^21.0.0"
+    "semantic-release": "^22.0.1"
   },
   "devDependencies": {
     "@myparcel-eslint/eslint-config-esnext": "^1.2.0",
