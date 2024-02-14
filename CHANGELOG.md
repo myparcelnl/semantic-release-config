@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.1](https://github.com/myparcelnl/semantic-release-config/compare/v5.0.0...v5.0.1) (2024-02-14)
+
+
+### :bug: Bug Fixes
+
+* pass conventionalcommits preset to commit analyzer and release notes generator ([9852e4b](https://github.com/myparcelnl/semantic-release-config/commit/9852e4b9d05601d821791ae83f322be570e23c84))
+
 ## [5.0.0](https://github.com/myparcelnl/semantic-release-config/compare/v4.3.0...v5.0.0) (2023-04-12)
 
 
