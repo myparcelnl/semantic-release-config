@@ -1,6 +1,7 @@
 const {addPlugin} = require('../helpers/addPlugin');
 
 const defaults = {
+  preset: 'conventionalcommits',
   presetConfig: {
     header: 'Changes',
     types: [
