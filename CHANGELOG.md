@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.0](https://github.com/myparcelnl/semantic-release-config/compare/v5.0.1...v5.1.0) (2025-03-31)
+
+
+### :sparkles: New Features
+
+* allow refactor/build types to trigger a release ([f9027f6](https://github.com/myparcelnl/semantic-release-config/commit/f9027f6a39388e613e6aa5f7749e1f35d835bc3d))
+
 ## [5.0.1](https://github.com/myparcelnl/semantic-release-config/compare/v5.0.0...v5.0.1) (2024-02-14)
 
 
