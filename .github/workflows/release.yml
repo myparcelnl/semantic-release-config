@@ -5,14 +5,22 @@ on:
     branches:
       - main
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  release:
+  # Publish to NEW scope (@myparcel-dev) with new token
+  release-new:
     runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.v.outputs.version }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -20,12 +28,67 @@ jobs:
           node-version: '20'
           registry-url: 'https://registry.npmjs.org'
 
-      - name: Install dependencies
-        run: npm ci
+      - name: Enable Corepack
+        run: corepack enable
 
-      - name: Release
+      - name: Install dependencies
+        run: yarn install --immutable
+
+      - name: Release to new scope
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN_NEW }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN_NEW }}
         run: npx semantic-release
+
+      - name: Read version
+        id: v
+        run: echo "version=$(node -p \"require('./package.json').version\")" >> $GITHUB_OUTPUT
+
+      - name: Upload package files
+        uses: actions/upload-artifact@v4
+        with:
+          name: pkg
+          path: |
+            package.json
+            README.md
+
+  # TEMPORARY: Publish same release to OLD scope (@myparcel) using org-level NPM_TOKEN
+  # This job can be removed once the old token expires (2 weeks) or when migration is complete
+  release-legacy:
+    needs: release-new
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download package files
+        uses: actions/download-artifact@v4
+        with:
+          name: pkg
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      - name: Rewrite package name to old scope
+        run: |
+          OLD_NAME=$(node -p "require('./package.json').name.replace('@myparcel-dev/', '@myparcel/')")
+          jq --arg n "$OLD_NAME" '.name = $n' package.json > package.json.tmp && mv package.json.tmp package.json
+          cat package.json
+
+      - name: Configure npm with old token
+        run: |
+          npm config set //registry.npmjs.org/:_authToken=${NPM_TOKEN}
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Publish to old scope
+        run: npm publish --access public || echo "Legacy publish skipped (version may already exist)"
