@@ -3,6 +3,5 @@ const mainConfig = require('./index');
 
 module.exports = {
   ...mainConfig,
-  extends: '@myparcel/semantic-release-config',
   plugins: [...mainConfig.plugins, addNpmPlugin(), addGitHubPlugin(), addGitPlugin()],
 };

@@ -1,6 +1,23 @@
+# PACKAGE MOVED
+
+**This package has been migrated to a new namespace.**
+
+- **Old:** `@myparcel/semantic-release-config`
+- **New:** `@myparcel-dev/semantic-release-config`
+
+**The old package will no longer receive updates. Please migrate to the new package.**
+
+**Migration steps:**
+
+1. Uninstall: `npm uninstall @myparcel/semantic-release-config` or `yarn remove @myparcel/semantic-release-config`
+2. Install: `npm install -D @myparcel-dev/semantic-release-config` or `yarn add -D @myparcel-dev/semantic-release-config`
+3. Update your release config from `"@myparcel/semantic-release-config"` to `"@myparcel-dev/semantic-release-config"`
+
+---
+
 # MyParcel semantic-release configuration
 
-[![npm](https://img.shields.io/npm/v/@myparcel/semantic-release-config)](https://www.npmjs.com/package/@myparcel/semantic-release-config/)
+[![npm](https://img.shields.io/npm/v/@myparcel-dev/semantic-release-config)](https://www.npmjs.com/package/@myparcel-dev/semantic-release-config/)
 
 This package contains multiple semantic-release presets. Additional information, documentation and guides on
 semantic-release can be found [here](https://github.com/semantic-release/semantic-release)
@@ -10,13 +27,13 @@ semantic-release can be found [here](https://github.com/semantic-release/semanti
 Install the package via yarn:
 
 ```
-yarn add -D @myparcel/semantic-release-config
+yarn add -D @myparcel-dev/semantic-release-config
 ```
 
 or npm:
 
 ```
-npm i -D @myparcel/semantic-release-config
+npm i -D @myparcel-dev/semantic-release-config
 ```
 
 Create a [semantic-release config file], if you haven't already, and add the following: (JavaScript example)
@@ -24,7 +41,7 @@ Create a [semantic-release config file], if you haven't already, and add the fol
 ```js
 // release.config.js
 module.exports = {
-  extends: '@myparcel/semantic-release-config',
+  extends: '@myparcel-dev/semantic-release-config',
 };
 ```
 
@@ -33,15 +50,15 @@ Or to use one of the other available presets:
 ```js
 // release.config.js
 module.exports = {
-  extends: '@myparcel/semantic-release-config/npm',
+  extends: '@myparcel-dev/semantic-release-config/npm',
 };
-```    
+```
 
 ## Configurations
 
 ### Base config
 
-> `@myparcel/semantic-release-config`
+> `@myparcel-dev/semantic-release-config`
 
 This is the base configuration, which other ones should be based on. For more in-depth information on the configurations
 used with each plugin, see `./src/plugins/<plugin>.js`.
@@ -52,14 +69,14 @@ used with each plugin, see `./src/plugins/<plugin>.js`.
 
 ### NPM
 
-> `@myparcel/semantic-release-config/npm`
+> `@myparcel-dev/semantic-release-config/npm`
 
 - [Base plugins](#base-config)
 - [@semantic-release/npm]
 
 ### Composer
 
-> `@myparcel/semantic-release-config/npm`
+> `@myparcel-dev/semantic-release-config/composer`
 
 - [Base plugins](#base-config)
 - [@iwavesmedia/semantic-release-composer]
@@ -67,7 +84,7 @@ used with each plugin, see `./src/plugins/<plugin>.js`.
 
 ### GitHub
 
-> `@myparcel/semantic-release-config/github`
+> `@myparcel-dev/semantic-release-config/github`
 
 - [Base plugins](#base-config)
 - [@semantic-release/github]
@@ -75,7 +92,7 @@ used with each plugin, see `./src/plugins/<plugin>.js`.
 
 ### GitHub + Composer
 
-> `@myparcel/semantic-release-config/github-composer`
+> `@myparcel-dev/semantic-release-config/github-composer`
 
 - [Base plugins](#base-config)
 - [@iwavesmedia/semantic-release-composer]
@@ -84,7 +101,7 @@ used with each plugin, see `./src/plugins/<plugin>.js`.
 
 ### GitHub + NPM
 
-> `@myparcel/semantic-release-config/github-npm`
+> `@myparcel-dev/semantic-release-config/github-npm`
 
 - [Base plugins](#base-config)
 - [@semantic-release/npm]
