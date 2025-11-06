@@ -1,20 +1,3 @@
-# PACKAGE MOVED
-
-**This package has been migrated to a new namespace.**
-
-- **Old:** `@myparcel/semantic-release-config`
-- **New:** `@myparcel-dev/semantic-release-config`
-
-**The old package will no longer receive updates. Please migrate to the new package.**
-
-**Migration steps:**
-
-1. Uninstall: `npm uninstall @myparcel/semantic-release-config` or `yarn remove @myparcel/semantic-release-config`
-2. Install: `npm install -D @myparcel-dev/semantic-release-config` or `yarn add -D @myparcel-dev/semantic-release-config`
-3. Update your release config from `"@myparcel/semantic-release-config"` to `"@myparcel-dev/semantic-release-config"`
-
----
-
 # MyParcel semantic-release configuration
 
 [![npm](https://img.shields.io/npm/v/@myparcel-dev/semantic-release-config)](https://www.npmjs.com/package/@myparcel-dev/semantic-release-config/)
