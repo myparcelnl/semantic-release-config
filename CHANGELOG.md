@@ -1,3 +1,33 @@
+# [6.0.0](https://github.com/myparcelnl/semantic-release-config/compare/v5.1.0...v6.0.0) (2025-11-06)
+
+
+### Features
+
+* migrate to [@myparcel-dev](https://github.com/myparcel-dev) scope ([#62](https://github.com/myparcelnl/semantic-release-config/issues/62)) ([c92ca98](https://github.com/myparcelnl/semantic-release-config/commit/c92ca98cc3e263458171fa2c9f56527a4aa7a9ad))
+
+
+### BREAKING CHANGES
+
+* Package name changed from @myparcel/semantic-release-config to @myparcel-dev/semantic-release-config
+
+- Added .releaserc.json for bootstrap (temporary, remove after first publish)
+
+- Added GitHub Actions workflow for automated releases
+
+- Fixed self-referencing extends in preset files
+
+* fix: update workflow for yarn and dual-publish
+
+Changed npm ci to yarn install --immutable
+
+* feat: add deprecation workflow and simplify release
+
+Added workflow to deprecate all 57 old scope packages
+
+Removed dual-publish from release workflow
+
+Old packages will show deprecation notice on NPM
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See
