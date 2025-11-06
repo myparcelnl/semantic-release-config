@@ -1,3 +1,10 @@
+## [6.0.1](https://github.com/myparcelnl/semantic-release-config/compare/v6.0.0...v6.0.1) (2025-11-06)
+
+
+### Bug Fixes
+
+* use GitHub App token for protected branch access ([27008e1](https://github.com/myparcelnl/semantic-release-config/commit/27008e17535e25da922e97e8fc02122936555136))
+
 # [6.0.0](https://github.com/myparcelnl/semantic-release-config/compare/v5.1.0...v6.0.0) (2025-11-06)
 
 
