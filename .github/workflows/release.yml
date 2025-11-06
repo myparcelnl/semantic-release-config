@@ -13,11 +13,18 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup Git credentials
+        id: credentials
+        uses: myparcelnl/actions/setup-git-credentials@v4
+        with:
+          app-id: ${{ secrets.MYPARCEL_APP_ID }}
+          private-key: ${{ secrets.MYPARCEL_APP_PRIVATE_KEY }}
+
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ steps.credentials.outputs.token }}
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -33,7 +40,7 @@ jobs:
 
       - name: Release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ steps.credentials.outputs.token }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN_NEW }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN_NEW }}
         run: npx semantic-release
