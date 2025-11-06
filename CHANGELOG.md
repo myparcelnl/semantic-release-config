@@ -1,3 +1,10 @@
+## [6.0.3](https://github.com/myparcelnl/semantic-release-config/compare/v6.0.2...v6.0.3) (2025-11-06)
+
+
+### Bug Fixes
+
+* make deprecation workflow skip missing packages ([9a3dd87](https://github.com/myparcelnl/semantic-release-config/commit/9a3dd87b2b982f8e728aa687298f025582b8f7c1))
+
 ## [6.0.2](https://github.com/myparcelnl/semantic-release-config/compare/v6.0.1...v6.0.2) (2025-11-06)
 
 
