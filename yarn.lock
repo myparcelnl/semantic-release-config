@@ -138,6 +138,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@myparcel-dev/semantic-release-config@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@myparcel-dev/semantic-release-config@workspace:."
+  dependencies:
+    "@iwavesmedia/semantic-release-composer": ^1.0.0
+    "@myparcel-eslint/eslint-config-esnext": ^1.2.0
+    "@myparcel-eslint/eslint-config-node": ^1.2.0
+    "@myparcel-eslint/eslint-config-prettier": ^1.2.0
+    "@semantic-release/changelog": ^6.0.1
+    "@semantic-release/commit-analyzer": ^9.0.2
+    "@semantic-release/exec": ^6.0.3
+    "@semantic-release/git": ^10.0.1
+    "@semantic-release/github": ^8.0.4
+    "@semantic-release/npm": ^10.0.0
+    "@semantic-release/release-notes-generator": ^10.0.0
+    conventional-changelog-conventionalcommits: ^4.0.0 || ^5.0.0
+    eslint: ^8.38.0
+    prettier: ^2.8.7
+    semantic-release: ^21.0.0
+  languageName: unknown
+  linkType: soft
+
 "@myparcel-eslint/eslint-config-es6@npm:^1.2.3":
   version: 1.2.3
   resolution: "@myparcel-eslint/eslint-config-es6@npm:1.2.3"
@@ -200,28 +222,6 @@ __metadata:
   checksum: c10890fdd77cd630500b65301dd43fe32ea82a383fdf51d64300744325210e9c4e4b80b6f274c761f7beabb21e128f54ea52955132de8fbe5c5d92aaa3baa3c1
   languageName: node
   linkType: hard
-
-"@myparcel/semantic-release-config@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@myparcel/semantic-release-config@workspace:."
-  dependencies:
-    "@iwavesmedia/semantic-release-composer": ^1.0.0
-    "@myparcel-eslint/eslint-config-esnext": ^1.2.0
-    "@myparcel-eslint/eslint-config-node": ^1.2.0
-    "@myparcel-eslint/eslint-config-prettier": ^1.2.0
-    "@semantic-release/changelog": ^6.0.1
-    "@semantic-release/commit-analyzer": ^9.0.2
-    "@semantic-release/exec": ^6.0.3
-    "@semantic-release/git": ^10.0.1
-    "@semantic-release/github": ^8.0.4
-    "@semantic-release/npm": ^10.0.0
-    "@semantic-release/release-notes-generator": ^10.0.0
-    conventional-changelog-conventionalcommits: ^4.0.0 || ^5.0.0
-    eslint: ^8.38.0
-    prettier: ^2.8.7
-    semantic-release: ^21.0.0
-  languageName: unknown
-  linkType: soft
 
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
