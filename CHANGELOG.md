@@ -1,3 +1,10 @@
+## [6.0.2](https://github.com/myparcelnl/semantic-release-config/compare/v6.0.1...v6.0.2) (2025-11-06)
+
+
+### Bug Fixes
+
+* update README on NPM ([53a8f6b](https://github.com/myparcelnl/semantic-release-config/commit/53a8f6b2a5cd34c296ed5125770c936cefe668f1))
+
 ## [6.0.1](https://github.com/myparcelnl/semantic-release-config/compare/v6.0.0...v6.0.1) (2025-11-06)
 
 
