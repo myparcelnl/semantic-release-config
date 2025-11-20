@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.5](https://github.com/myparcelnl/semantic-release-config/compare/v6.0.4...v6.0.5) (2025-11-20)
+
+
+### :bug: Bug Fixes
+
+* use NPM_TOKEN_NEW for publishing ([d9c39f8](https://github.com/myparcelnl/semantic-release-config/commit/d9c39f8a1193a0f2ff21e9051a98502fac61689c))
+
 ## [6.0.4](https://github.com/myparcelnl/semantic-release-config/compare/v6.0.3...v6.0.4) (2025-11-20)
 
 
