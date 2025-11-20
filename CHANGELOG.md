@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.6](https://github.com/myparcelnl/semantic-release-config/compare/v6.0.5...v6.0.6) (2025-11-20)
+
+
+### :bug: Bug Fixes
+
+* add exports field for ESM subpath imports ([d1a1c3d](https://github.com/myparcelnl/semantic-release-config/commit/d1a1c3d5ae1cceaf0d16bf1234edc73aa9d82303))
+
 ## [6.0.5](https://github.com/myparcelnl/semantic-release-config/compare/v6.0.4...v6.0.5) (2025-11-20)
 
 
