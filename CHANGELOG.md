@@ -1,3 +1,15 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [6.0.4](https://github.com/myparcelnl/semantic-release-config/compare/v6.0.3...v6.0.4) (2025-11-20)
+
+
+### :bug: Bug Fixes
+
+* include all .js config files in npm package ([b5cc1e5](https://github.com/myparcelnl/semantic-release-config/commit/b5cc1e5c3287e57d54525d5992278f9652582231))
+
 ## [6.0.3](https://github.com/myparcelnl/semantic-release-config/compare/v6.0.2...v6.0.3) (2025-11-06)
 
 
