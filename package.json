@@ -15,6 +15,13 @@
   },
   "license": "MIT",
   "author": "Edie Lemoine <edie@myparcel.nl>",
+  "exports": {
+    "./github-npm": "./github-npm.js",
+    "./github-composer": "./github-composer.js",
+    "./github": "./github.js",
+    "./npm": "./npm.js",
+    "./composer": "./composer.js"
+  },
   "files": [
     "*.js"
   ],
