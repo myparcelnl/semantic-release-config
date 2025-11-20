@@ -32,4 +32,4 @@ jobs:
           token: ${{ steps.credentials.outputs.token }}
           write-summary: true
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN_NEW }}
