@@ -15,6 +15,9 @@
   },
   "license": "MIT",
   "author": "Edie Lemoine <edie@myparcel.nl>",
+  "files": [
+    "*.js"
+  ],
   "prettier": "@myparcel/prettier-config",
   "dependencies": {
     "@iwavesmedia/semantic-release-composer": "^1.0.0",
