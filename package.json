@@ -23,7 +23,8 @@
     "./composer": "./composer.js"
   },
   "files": [
-    "*.js"
+    "*.js",
+    "src"
   ],
   "prettier": "@myparcel/prettier-config",
   "dependencies": {
