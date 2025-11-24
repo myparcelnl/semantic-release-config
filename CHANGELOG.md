@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.9](https://github.com/myparcelnl/semantic-release-config/compare/v6.0.8...v6.0.9) (2025-11-24)
+
+
+### :bug: Bug Fixes
+
+* correct src/plugins export path ([5570a8a](https://github.com/myparcelnl/semantic-release-config/commit/5570a8a9298bbda5ad6a374e6dea2b1542bfb002))
+
 ## [6.0.8](https://github.com/myparcelnl/semantic-release-config/compare/v6.0.7...v6.0.8) (2025-11-24)
 
 

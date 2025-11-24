@@ -1,6 +1,6 @@
 {
   "name": "@myparcel-dev/semantic-release-config",
-  "version": "6.0.8",
+  "version": "6.0.9",
   "description": "Reusable configurations for semantic-release",
   "keywords": [
     "semantic-release"
