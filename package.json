@@ -20,13 +20,14 @@
     "./github-composer": "./github-composer.js",
     "./github": "./github.js",
     "./npm": "./npm.js",
-    "./composer": "./composer.js"
+    "./composer": "./composer.js",
+    "./src/plugins": "./src/plugins.js"
   },
   "files": [
     "*.js",
     "src"
   ],
-  "prettier": "@myparcel/prettier-config",
+  "prettier": "@myparcel-dev/prettier-config",
   "dependencies": {
     "@iwavesmedia/semantic-release-composer": "^1.0.0",
     "@semantic-release/changelog": "^6.0.1",
@@ -40,9 +41,9 @@
     "semantic-release": "^21.0.0"
   },
   "devDependencies": {
-    "@myparcel-eslint/eslint-config-esnext": "^1.2.0",
-    "@myparcel-eslint/eslint-config-node": "^1.2.0",
-    "@myparcel-eslint/eslint-config-prettier": "^1.2.0",
+    "@myparcel-dev/eslint-config-esnext": "^1.4.0",
+    "@myparcel-dev/eslint-config-node": "^1.4.0",
+    "@myparcel-dev/eslint-config-prettier": "^1.4.0",
     "eslint": "^8.38.0",
     "prettier": "^2.8.7"
   },
