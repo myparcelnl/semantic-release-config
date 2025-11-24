@@ -10,6 +10,13 @@ All notable changes to this project will be documented in this file. See
 
 * add src/plugins export and update to [@myparcel-dev](https://github.com/myparcel-dev) eslint packages ([17f72a1](https://github.com/myparcelnl/semantic-release-config/commit/17f72a141cf20b1bf32ac787b263fef9d5af8962))
 
+## [6.0.8](https://github.com/myparcelnl/semantic-release-config/compare/v6.0.7...v6.0.8) (2025-11-24)
+
+
+### :bug: Bug Fixes
+
+* add src/plugins export and update to [@myparcel-dev](https://github.com/myparcel-dev) eslint packages ([17f72a1](https://github.com/myparcelnl/semantic-release-config/commit/17f72a141cf20b1bf32ac787b263fef9d5af8962))
+
 ## [6.0.7](https://github.com/myparcelnl/semantic-release-config/compare/v6.0.6...v6.0.7) (2025-11-20)
 
 
