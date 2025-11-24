@@ -21,7 +21,7 @@
     "./github": "./github.js",
     "./npm": "./npm.js",
     "./composer": "./composer.js",
-    "./src/plugins": "./src/plugins.js"
+    "./src/plugins": "./src/plugins/index.js"
   },
   "files": [
     "*.js",
