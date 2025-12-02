@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.10](https://github.com/myparcelnl/semantic-release-config/compare/v6.0.9...v6.0.10) (2025-12-02)
+
+
+### :bug: Bug Fixes
+
+* fix cjs / requirejs imports not working with some paths ([#63](https://github.com/myparcelnl/semantic-release-config/issues/63)) ([76d8e13](https://github.com/myparcelnl/semantic-release-config/commit/76d8e13220d90aee2b6cc1963aaa00a268c0e1f1))
+
 ## [6.0.9](https://github.com/myparcelnl/semantic-release-config/compare/v6.0.8...v6.0.9) (2025-11-24)
 
 
