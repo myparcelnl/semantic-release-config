@@ -37,7 +37,7 @@ module.exports = {
 };
 ```
 
-## Configurations
+## Configuration
 
 ### Base config
 
