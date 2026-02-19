@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.11](https://github.com/myparcelnl/semantic-release-config/compare/v6.0.10...v6.0.11) (2026-02-19)
+
+
+### :bug: Bug Fixes
+
+* **ci:** use NPM_TOKEN secret name in release workflows ([2a44c8d](https://github.com/myparcelnl/semantic-release-config/commit/2a44c8d93739471a139835ff46da44ed97efce78))
+
 ## [6.0.10](https://github.com/myparcelnl/semantic-release-config/compare/v6.0.9...v6.0.10) (2025-12-02)
 
 
