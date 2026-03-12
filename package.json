@@ -52,5 +52,8 @@
   "packageManager": "yarn@3.3.0",
   "publishConfig": {
     "access": "public"
+  },
+  "resolutions": {
+    "tar": "^7.5.11"
   }
 }
