@@ -9,3 +9,8 @@ updates:
     directory: '/'
     schedule:
       interval: 'daily'
+    cooldown:
+      exclude:
+        - '@myparcel/*'
+        - '@myparcel-dev/*'
+        - '@myparcel-eslint/*'
