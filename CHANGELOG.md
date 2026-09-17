@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.0](https://github.com/myparcelnl/semantic-release-config/compare/v6.0.12...v7.0.0) (2026-09-17)
+
+### ⚠ BREAKING CHANGES
+
+* **security:** requires node ^22.14.0 || >= 24.10.0, set by semantic-release 25
+
+Co-authored-by: Claude Opus 5 (1M context) <noreply@anthropic.com>
+
+### :bug: Bug Fixes
+
+* **security:** replace the bundled npm 9 with npm 11 ([#78](https://github.com/myparcelnl/semantic-release-config/issues/78)) ([ddc15fc](https://github.com/myparcelnl/semantic-release-config/commit/ddc15fc71a3e5205926705ceadd6170eeb9fb77c))
+
 ## [6.0.12](https://github.com/myparcelnl/semantic-release-config/compare/v6.0.11...v6.0.12) (2026-03-13)
 
 
