@@ -65,12 +65,25 @@ jobs:
       - name: Install dependencies
         run: yarn install --immutable
 
-      # --no-ci because semantic-release skips pull request events by design. The branch name
-      # goes through the environment, never into the run script, because it is attacker input.
+      # env-ci reads the branch from GITHUB_REF, which is refs/pull/<n>/merge on this event, and
+      # semantic-release then skips the branch instead of rehearsing it. Presenting the run as a
+      # push to the head branch is what makes the dry-run do the work. --no-ci does not help:
+      # it drops the CI guard, not the branch detection.
+      # The branch name goes through the environment, never into the run script, because it is
+      # attacker input.
       - name: Release dry-run
         env:
           GITHUB_TOKEN: ${{ steps.credentials.outputs.token }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           HEAD_REF: ${{ github.head_ref }}
-        run: npx semantic-release --dry-run --no-ci --branches "$HEAD_REF"
+          GITHUB_EVENT_NAME: push
+          GITHUB_REF: refs/heads/${{ github.head_ref }}
+        run: |
+          set -o pipefail
+          npx semantic-release --dry-run --branches "$HEAD_REF" | tee "$RUNNER_TEMP/dry-run.log"
+          grep -qE 'The next release version is|There are no relevant changes' "$RUNNER_TEMP/dry-run.log" ||
+            {
+              echo "::error::semantic-release skipped this branch instead of analysing it"
+              exit 1
+            }
