@@ -6,7 +6,7 @@ const defaults = {
     // extend default types to allow releases for internal changes too
     {type: 'refactor', release: 'patch'},
     {type: 'build', release: 'patch'},
-  ]
+  ],
 };
 
 /**
