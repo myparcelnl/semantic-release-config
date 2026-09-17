@@ -93,6 +93,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@conventional-changelog/template@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "@conventional-changelog/template@npm:1.4.0"
+  checksum: dac527b0eb01ff4b2457b560f3fb61e24c8797cd5e7cafe4d4561454352714d8aec4d39092a15da068fc082878b1713a589cfd8471267f340f9a78c28057d74b
+  languageName: node
+  linkType: hard
+
 "@eslint-community/eslint-utils@npm:^4.2.0":
   version: 4.4.0
   resolution: "@eslint-community/eslint-utils@npm:4.4.0"
@@ -263,7 +270,7 @@ __metadata:
     "@semantic-release/github": ^12.0.9
     "@semantic-release/npm": ^13.1.5
     "@semantic-release/release-notes-generator": ^14.1.1
-    conventional-changelog-conventionalcommits: ^9.0.0
+    conventional-changelog-conventionalcommits: ^10.4.0
     eslint: ^8.38.0
     prettier: ^2.8.7
     semantic-release: ^25.0.9
@@ -1423,12 +1430,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog-conventionalcommits@npm:^9.0.0":
-  version: 9.3.1
-  resolution: "conventional-changelog-conventionalcommits@npm:9.3.1"
+"conventional-changelog-conventionalcommits@npm:^10.4.0":
+  version: 10.4.0
+  resolution: "conventional-changelog-conventionalcommits@npm:10.4.0"
   dependencies:
-    compare-func: ^2.0.0
-  checksum: 6b581bf8e1fca7e404333cc04568140825495b652e559cc83dd56e40864a1178a2864001d0354de6b75c575739b9e7f328bb99339472c855c165990952a565b8
+    "@conventional-changelog/template": ^1.4.0
+  checksum: bc95ccb4f20cc47c93e1ebcd53d33da051cce9d173f3aa931aaa50cf3ded4882d281252d5e1956b03833d803f8b46f26da0667e07b65167630007c6f5360ceea
   languageName: node
   linkType: hard
 
