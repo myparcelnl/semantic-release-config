@@ -1,7 +1,13 @@
-name: Pull request
+name: Checks
 
+# Triggered by push, not by pull_request. On a pull_request event env-ci reads the branch from
+# GITHUB_REF, which is then refs/pull/<n>/merge, and semantic-release skips that branch instead
+# of rehearsing it. The runner ignores any attempt to override GITHUB_REF through `env`.
+# Checks report on the head commit either way, so they still gate the pull request.
 on:
-  pull_request:
+  push:
+    branches-ignore:
+      - main
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -32,9 +38,9 @@ jobs:
         run: yarn format:check
 
   dry-run:
-    # Dependabot and forks get a read-only token and no access to the secrets below, so
-    # semantic-release cannot verify its conditions there. Those pull requests get lint only.
-    if: github.actor != 'dependabot[bot]' && github.event.pull_request.head.repo.full_name == github.repository
+    # Dependabot gets a read-only token and no access to the secrets below, so semantic-release
+    # cannot verify its conditions on its branches. Those get the lint job only.
+    if: github.actor != 'dependabot[bot]'
     runs-on: ubuntu-latest
     steps:
       - name: Setup Git credentials
@@ -44,12 +50,9 @@ jobs:
           app-id: ${{ secrets.MYPARCEL_APP_ID }}
           private-key: ${{ secrets.MYPARCEL_APP_PRIVATE_KEY }}
 
-      # semantic-release resolves `branches` against the remote, so check out the head branch
-      # itself. The merge commit actions/checkout gives by default has no branch name.
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.head_ref }}
           fetch-depth: 0
           token: ${{ steps.credentials.outputs.token }}
 
@@ -65,23 +68,18 @@ jobs:
       - name: Install dependencies
         run: yarn install --immutable
 
-      # env-ci reads the branch from GITHUB_REF, which is refs/pull/<n>/merge on this event, and
-      # semantic-release then skips the branch instead of rehearsing it. Presenting the run as a
-      # push to the head branch is what makes the dry-run do the work. --no-ci does not help:
-      # it drops the CI guard, not the branch detection.
       # The branch name goes through the environment, never into the run script, because it is
-      # attacker input.
+      # attacker input. The grep fails the step when semantic-release skips the branch rather
+      # than analysing it, which it does silently and with exit code 0.
       - name: Release dry-run
         env:
           GITHUB_TOKEN: ${{ steps.credentials.outputs.token }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-          HEAD_REF: ${{ github.head_ref }}
-          GITHUB_EVENT_NAME: push
-          GITHUB_REF: refs/heads/${{ github.head_ref }}
+          BRANCH: ${{ github.ref_name }}
         run: |
           set -o pipefail
-          npx semantic-release --dry-run --branches "$HEAD_REF" | tee "$RUNNER_TEMP/dry-run.log"
+          npx semantic-release --dry-run --branches "$BRANCH" | tee "$RUNNER_TEMP/dry-run.log"
           grep -qE 'The next release version is|There are no relevant changes' "$RUNNER_TEMP/dry-run.log" ||
             {
               echo "::error::semantic-release skipped this branch instead of analysing it"
