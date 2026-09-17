@@ -25,6 +25,8 @@ jobs:
           token: ${{ steps.credentials.outputs.token }}
 
       - uses: myparcelnl/actions/yarn2-install@v3
+        with:
+          node-version: '24'
 
       - name: 'Run semantic release'
         uses: myparcelnl/actions/semantic-release@v3
