@@ -33,7 +33,8 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint . --ext .js",
-    "lint:fix": "eslint . --ext .js --fix"
+    "lint:fix": "eslint . --ext .js --fix",
+    "test": "node --test \"test/**/*.test.js\""
   },
   "dependencies": {
     "@iwavesmedia/semantic-release-composer": "^1.0.0",
