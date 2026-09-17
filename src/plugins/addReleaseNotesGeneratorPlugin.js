@@ -50,6 +50,7 @@ const defaults = {
  *
  * @returns {[string, Object]}
  */
-const addReleaseNotesGeneratorPlugin = (options = {}) => addPlugin('@semantic-release/release-notes-generator', options, defaults);
+const addReleaseNotesGeneratorPlugin = (options = {}) =>
+  addPlugin('@semantic-release/release-notes-generator', options, defaults);
 
 module.exports = {addReleaseNotesGeneratorPlugin, releaseNotesGeneratorPluginDefaults: defaults};

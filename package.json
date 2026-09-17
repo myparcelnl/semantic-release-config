@@ -29,7 +29,13 @@
     "*.js",
     "src"
   ],
-  "prettier": "@myparcel-dev/prettier-config",
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint . --ext .js",
+    "lint:fix": "eslint . --ext .js --fix",
+    "test": "node --test \"test/**/*.test.js\""
+  },
   "dependencies": {
     "@iwavesmedia/semantic-release-composer": "^1.0.0",
     "@semantic-release/changelog": "^6.0.1",
@@ -46,6 +52,7 @@
     "@myparcel-dev/eslint-config-esnext": "^1.4.0",
     "@myparcel-dev/eslint-config-node": "^1.4.0",
     "@myparcel-dev/eslint-config-prettier": "^1.4.0",
+    "@myparcel-dev/prettier-config": "^2.0.1",
     "eslint": "^8.38.0",
     "prettier": "^2.8.7"
   },

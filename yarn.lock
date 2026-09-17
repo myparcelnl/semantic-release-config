@@ -248,6 +248,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@myparcel-dev/prettier-config@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "@myparcel-dev/prettier-config@npm:2.0.1"
+  checksum: 91a7070fe688e34f1b6b61140e51221b0d2428f9caa417925a7d261ffa4a3f332bc8fa8323017677c5175e5cc2519a821160be01562d1b95b52e0d1476b9b450
+  languageName: node
+  linkType: hard
+
 "@myparcel-dev/semantic-release-config@workspace:.":
   version: 0.0.0-use.local
   resolution: "@myparcel-dev/semantic-release-config@workspace:."
@@ -256,6 +263,7 @@ __metadata:
     "@myparcel-dev/eslint-config-esnext": ^1.4.0
     "@myparcel-dev/eslint-config-node": ^1.4.0
     "@myparcel-dev/eslint-config-prettier": ^1.4.0
+    "@myparcel-dev/prettier-config": ^2.0.1
     "@semantic-release/changelog": ^6.0.1
     "@semantic-release/commit-analyzer": ^13.0.1
     "@semantic-release/exec": ^7.1.0

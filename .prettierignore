@@ -1,0 +1,7 @@
+# Ignore folders
+.idea
+.yarn
+node_modules
+
+# Ignore changelog as it is generated automatically by semantic-release
+CHANGELOG.md
