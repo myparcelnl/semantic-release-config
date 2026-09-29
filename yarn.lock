@@ -184,11 +184,11 @@ __metadata:
   linkType: hard
 
 "@iwavesmedia/semantic-release-composer@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@iwavesmedia/semantic-release-composer@npm:1.0.0"
+  version: 1.1.1
+  resolution: "@iwavesmedia/semantic-release-composer@npm:1.1.1"
   dependencies:
     "@semantic-release/error": ^2.2.0
-  checksum: 8cacf9139192c2a6f33b7c3a27c31cecb0165703d24ca69e0d7c7092db5ebc0645a688da5abaef315cd079ac161c8d8b3098810e4925b4f3166a5a6596c2187d
+  checksum: eb234f60cd9e031b9c83985862a3fb35982080ba631cbe7d5d1aaa2fe76fe5d26a6333ff2eda01f2e51c6fe99deac663312b425b52b67a7869b59aa56ab1cb0a
   languageName: node
   linkType: hard
 
@@ -226,16 +226,15 @@ __metadata:
   linkType: hard
 
 "@myparcel-dev/eslint-config-prettier@npm:^1.4.0":
-  version: 1.4.0
-  resolution: "@myparcel-dev/eslint-config-prettier@npm:1.4.0"
+  version: 1.4.1
+  resolution: "@myparcel-dev/eslint-config-prettier@npm:1.4.1"
   dependencies:
-    "@myparcel/prettier-config": ">= 1"
     eslint-config-prettier: 1 - 8
     eslint-plugin-prettier: 1 - 4
   peerDependencies:
     eslint: 7 - 8
     prettier: ">= 2"
-  checksum: a38875b26a5665662867bcfbafced3c97d4862735f6201e1b212c772f3483d096f17cc663044d3838187544370c5070670bcc7aef1527bbcc40c515b94d82fe4
+  checksum: 243ebfd1d2d2fe54dd27ff5d128ce23f0f7b912445dffa681009b6ea68087a59b0a1e1578c6e481f66aa6ca6d241381cc03bf325dd4225f57b588aa184ae409e
   languageName: node
   linkType: hard
 
@@ -249,9 +248,9 @@ __metadata:
   linkType: hard
 
 "@myparcel-dev/prettier-config@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@myparcel-dev/prettier-config@npm:2.0.1"
-  checksum: 91a7070fe688e34f1b6b61140e51221b0d2428f9caa417925a7d261ffa4a3f332bc8fa8323017677c5175e5cc2519a821160be01562d1b95b52e0d1476b9b450
+  version: 2.0.2
+  resolution: "@myparcel-dev/prettier-config@npm:2.0.2"
+  checksum: 8b35c73a68f0a48befe9864dc3532e959d6cf014beff2140490abb5fa021111c2161e8f40ea49706606028d228a6c43254c821fc2172ec1f01df207df9a2e581
   languageName: node
   linkType: hard
 
@@ -277,13 +276,6 @@ __metadata:
     semantic-release: ^25.0.9
   languageName: unknown
   linkType: soft
-
-"@myparcel/prettier-config@npm:>= 1":
-  version: 1.1.0
-  resolution: "@myparcel/prettier-config@npm:1.1.0"
-  checksum: c10890fdd77cd630500b65301dd43fe32ea82a383fdf51d64300744325210e9c4e4b80b6f274c761f7beabb21e128f54ea52955132de8fbe5c5d92aaa3baa3c1
-  languageName: node
-  linkType: hard
 
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
@@ -557,13 +549,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/openapi-types@npm:^27.0.0":
-  version: 27.0.0
-  resolution: "@octokit/openapi-types@npm:27.0.0"
-  checksum: 080e006d41302bb7936e952bff69ec5cb771d868709751ea9023abf3acb608c9e012bd3e1df8df19582d6bd3ee67b7383939d8d2f2e54033cd0e23c28869eb29
-  languageName: node
-  linkType: hard
-
 "@octokit/openapi-types@npm:^28.0.0":
   version: 28.0.0
   resolution: "@octokit/openapi-types@npm:28.0.0"
@@ -578,14 +563,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/plugin-paginate-rest@npm:^14.0.0":
-  version: 14.0.0
-  resolution: "@octokit/plugin-paginate-rest@npm:14.0.0"
+"@octokit/plugin-paginate-rest@npm:^15.0.0":
+  version: 15.0.0
+  resolution: "@octokit/plugin-paginate-rest@npm:15.0.0"
   dependencies:
-    "@octokit/types": ^16.0.0
+    "@octokit/types": ^17.0.0
   peerDependencies:
     "@octokit/core": ">=6"
-  checksum: e70af719e4e2efeed26ee43b2690060c4f618f9a7e3a764238ce4e1cd049c00cc9d216209396b299943e34e0237ddc5381d0383bbc88f19c0b4599b214a189bf
+  checksum: a3d48ac566d1f2b6355df83d27fbf2b92059b2952273fcd5f26788b2fe8166cfd848a94a10d31bcfb10770abfbd6d03b6347160eb5c090b8471e354edc2ee839
   languageName: node
   linkType: hard
 
@@ -634,15 +619,6 @@ __metadata:
     json-with-bigint: ^3.5.12
     universal-user-agent: ^7.0.2
   checksum: 67475ddbd2a76ac23c67dadb3a7a3dd3858cd1009dbe99f244ae1441f1645fb9056205d137907a07616c049c830fc3aac4f061e9d52087730da9ec842b1a2fb6
-  languageName: node
-  linkType: hard
-
-"@octokit/types@npm:^16.0.0":
-  version: 16.0.0
-  resolution: "@octokit/types@npm:16.0.0"
-  dependencies:
-    "@octokit/openapi-types": ^27.0.0
-  checksum: 2dc845046f3f9d06225f3ed1c865702ba8dc84080d8db4a8cc95156a1b1f67cce1a91ef3f3985068a7a1a7f32d1abaf87119e097c072a4107199d568974b25e0
   languageName: node
   linkType: hard
 
@@ -778,11 +754,11 @@ __metadata:
   linkType: hard
 
 "@semantic-release/github@npm:^12.0.0, @semantic-release/github@npm:^12.0.9":
-  version: 12.0.9
-  resolution: "@semantic-release/github@npm:12.0.9"
+  version: 12.0.10
+  resolution: "@semantic-release/github@npm:12.0.10"
   dependencies:
     "@octokit/core": ^7.0.0
-    "@octokit/plugin-paginate-rest": ^14.0.0
+    "@octokit/plugin-paginate-rest": ^15.0.0
     "@octokit/plugin-retry": ^8.0.0
     "@octokit/plugin-throttling": ^11.0.0
     "@semantic-release/error": ^4.0.0
@@ -800,13 +776,13 @@ __metadata:
     url-join: ^5.0.0
   peerDependencies:
     semantic-release: ">=24.1.0"
-  checksum: 809c0e9059282e1d1648f7a8a80c6451f77ccc408d35ab28135a8f01eddb24b77cd3d1d416fd644ea1628416ab3f78401ad133676f9043e5e1709c79b4329e7c
+  checksum: 84f263236b82b65faddb9e8e4d88992f606d326e28d6af9aa9b3560e596d1e5d9ddfa530fddd3123d424efb21bde91c480fec9fdec5ca864b10b1afec1d17553
   languageName: node
   linkType: hard
 
 "@semantic-release/npm@npm:^13.1.1, @semantic-release/npm@npm:^13.1.5":
-  version: 13.1.5
-  resolution: "@semantic-release/npm@npm:13.1.5"
+  version: 13.2.0
+  resolution: "@semantic-release/npm@npm:13.2.0"
   dependencies:
     "@actions/core": ^3.0.0
     "@semantic-release/error": ^4.0.0
@@ -825,7 +801,7 @@ __metadata:
     tempy: ^3.0.0
   peerDependencies:
     semantic-release: ">=20.1.0"
-  checksum: 2357863d7cbf104029bd8bd7783617eb893e646fe0c2bacabfa9692ed5fbfee076525b01e8a4fb183af6df52623f5585c9c519ed15d36e42a679ebb6a6d2c9d1
+  checksum: f7ceed55d303dd5bab1de1243eb32fd9d11a217fe94e9cecb496ce9901737544ee06b7ad80db7560767a464e3e8f8a5580e26b20d80333eba5dfbd05ade5c6e6
   languageName: node
   linkType: hard
 
