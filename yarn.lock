@@ -264,7 +264,7 @@ __metadata:
     "@myparcel-dev/eslint-config-node": ^1.4.0
     "@myparcel-dev/eslint-config-prettier": ^1.4.0
     "@myparcel-dev/prettier-config": ^2.0.1
-    "@semantic-release/changelog": ^6.0.1
+    "@semantic-release/changelog": ^7.0.0
     "@semantic-release/commit-analyzer": ^13.0.1
     "@semantic-release/exec": ^7.1.0
     "@semantic-release/git": ^10.0.1
@@ -690,17 +690,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/changelog@npm:^6.0.1":
-  version: 6.0.3
-  resolution: "@semantic-release/changelog@npm:6.0.3"
+"@semantic-release/changelog@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "@semantic-release/changelog@npm:7.0.0"
   dependencies:
-    "@semantic-release/error": ^3.0.0
-    aggregate-error: ^3.0.0
-    fs-extra: ^11.0.0
-    lodash: ^4.17.4
+    "@semantic-release/error": ^4.0.0
+    aggregate-error: ^5.0.0
+    lodash-es: ^4.17.21
   peerDependencies:
-    semantic-release: ">=18.0.0"
-  checksum: 63283df7aaff7b2d5c08ac322faf362fd953d4ca4f2d2a1855ca51482ff8e973e38497a4c4a35a5b6ebec8373608895ef74d41072565e5bf3766850b4a6def37
+    semantic-release: ">=20.1.0"
+  checksum: 690ebf795cee17cc1341693719ee82b10c5a12791c23b02dfc09570bb75285360cc13c3f939c63d68dd6f8b664f2a81c33ba6adbe44244c84d92d69f29b5e274
   languageName: node
   linkType: hard
 
