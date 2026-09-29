@@ -32,11 +32,11 @@ updates:
       minor-js-updates:
         applies-to: version-updates
         exclude-patterns:
-          - "@myparcel-pdk/*"
-          - "@myparcel-dev/pdk-*"
+          - '@myparcel-pdk/*'
+          - '@myparcel-dev/pdk-*'
         update-types:
-          - "minor"
-          - "patch"
+          - 'minor'
+          - 'patch'
       js-pdk:
         patterns:
           - '@myparcel-pdk/*'
