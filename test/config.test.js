@@ -1,4 +1,5 @@
 const assert = require('node:assert/strict');
+const path = require('node:path');
 const {describe, it} = require('node:test');
 const baseConfig = require('../index');
 const {addGitPlugin} = require('../src/plugins');
@@ -9,12 +10,19 @@ const {dependencies} = require('../package.json');
  * package it names is a dependency a consumer gets on install.
  */
 
+// Passed as a resolved path, so semantic-release loads this package's copy, not its own nested one.
+const RESOLVED_PLUGINS = ['@semantic-release/commit-analyzer', '@semantic-release/release-notes-generator'];
+
 const BASE_PLUGINS = [
   '@semantic-release/commit-analyzer',
   '@semantic-release/exec',
   '@semantic-release/release-notes-generator',
   '@semantic-release/changelog',
 ];
+
+const toEntry = (pluginName) => (RESOLVED_PLUGINS.includes(pluginName) ? require.resolve(pluginName) : pluginName);
+
+const toPackageName = (entry) => RESOLVED_PLUGINS.find((pluginName) => require.resolve(pluginName) === entry) ?? entry;
 
 const NPM_RELEASE_PLUGINS = ['@semantic-release/npm', '@semantic-release/github', '@semantic-release/git'];
 
@@ -50,7 +58,7 @@ for (const {name, config, plugins} of CONFIGS) {
     it('composes its plugins in order', () => {
       assert.deepEqual(
         config.plugins.map(([pluginName]) => pluginName),
-        plugins,
+        plugins.map(toEntry),
       );
     });
 
@@ -62,9 +70,22 @@ for (const {name, config, plugins} of CONFIGS) {
     });
 
     it('names only plugin packages that ship as a dependency', () => {
-      for (const [pluginName] of config.plugins) {
+      for (const [entry] of config.plugins) {
+        const pluginName = toPackageName(entry);
+
         assert.ok(pluginName in dependencies, `${pluginName} is missing from dependencies`);
         assert.doesNotThrow(() => require.resolve(pluginName), `${pluginName} does not resolve`);
+      }
+    });
+
+    it('passes the resolved plugins as paths inside this repo node_modules', () => {
+      const root = path.join(__dirname, '..', 'node_modules') + path.sep;
+
+      for (const pluginName of RESOLVED_PLUGINS) {
+        const [entry] = config.plugins.find(([name]) => toPackageName(name) === pluginName);
+
+        assert.ok(path.isAbsolute(entry), `${pluginName} is not an absolute path`);
+        assert.ok(entry.startsWith(root), `${entry} is outside ${root}`);
       }
     });
 

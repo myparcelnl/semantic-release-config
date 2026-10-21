@@ -14,6 +14,8 @@ const defaults = {
  *
  * @returns {[string, Object]}
  */
-const addCommitAnalyzerPlugin = (options = {}) => addPlugin('@semantic-release/commit-analyzer', options, defaults);
+// Resolved path, because semantic-release loads a plugin named by package from its own nested copy.
+const addCommitAnalyzerPlugin = (options = {}) =>
+  addPlugin(require.resolve('@semantic-release/commit-analyzer'), options, defaults);
 
 module.exports = {addCommitAnalyzerPlugin};

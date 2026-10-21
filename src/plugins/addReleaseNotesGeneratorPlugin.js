@@ -23,23 +23,23 @@ const defaults = {
       },
       {
         type: 'chore',
-        hidden: true,
+        effect: 'hidden',
       },
       {
         type: 'docs',
-        hidden: true,
+        effect: 'hidden',
       },
       {
         type: 'refactor',
-        hidden: true,
+        effect: 'hidden',
       },
       {
         type: 'style',
-        hidden: true,
+        effect: 'hidden',
       },
       {
         type: 'test',
-        hidden: true,
+        effect: 'hidden',
       },
     ],
   },
@@ -50,7 +50,8 @@ const defaults = {
  *
  * @returns {[string, Object]}
  */
+// Resolved path, because semantic-release loads a plugin named by package from its own nested copy.
 const addReleaseNotesGeneratorPlugin = (options = {}) =>
-  addPlugin('@semantic-release/release-notes-generator', options, defaults);
+  addPlugin(require.resolve('@semantic-release/release-notes-generator'), options, defaults);
 
 module.exports = {addReleaseNotesGeneratorPlugin, releaseNotesGeneratorPluginDefaults: defaults};
