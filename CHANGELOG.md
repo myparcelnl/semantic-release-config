@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.3](https://github.com/myparcelnl/semantic-release-config/compare/v7.0.2...v7.0.3) (2026-10-21)
+
+### :bug: Bug Fixes
+
+* read breaking changes only from commit footers ([#94](https://github.com/myparcelnl/semantic-release-config/issues/94)) ([f4bc5d2](https://github.com/myparcelnl/semantic-release-config/commit/f4bc5d21077515b4515744130fcb1d3991489489)), references [myparcelnl/sdk#672](https://github.com/myparcelnl/sdk/issues/672) [conventional-changelog#1517](https://github.com/conventional-changelog/issues/1517) [sdk#672](https://github.com/sdk/issues/672)
+
 ## [7.0.2](https://github.com/myparcelnl/semantic-release-config/compare/v7.0.1...v7.0.2) (2026-09-29)
 
 ## [7.0.1](https://github.com/myparcelnl/semantic-release-config/compare/v7.0.0...v7.0.1) (2026-09-17)
