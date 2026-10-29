@@ -3,6 +3,8 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.4](https://github.com/myparcelnl/semantic-release-config/compare/v7.0.3...v7.0.4) (2026-10-29)
+
 ## [7.0.3](https://github.com/myparcelnl/semantic-release-config/compare/v7.0.2...v7.0.3) (2026-10-21)
 
 ### :bug: Bug Fixes
