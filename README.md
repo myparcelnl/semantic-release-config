@@ -7,17 +7,14 @@ semantic-release can be found [here](https://github.com/semantic-release/semanti
 
 ## Usage
 
-Install the package via yarn:
+Install the package with pnpm:
 
 ```
-yarn add -D @myparcel-dev/semantic-release-config
+pnpm add -D @myparcel-dev/semantic-release-config
 ```
 
-or npm:
-
-```
-npm i -D @myparcel-dev/semantic-release-config
-```
+The `npm` and `github-npm` presets publish with pnpm, through [@anolilab/semantic-release-pnpm]. Set the `NPM_TOKEN`
+environment variable in the release job. A repository that does not use pnpm stays on version 7 of this package.
 
 Create a [semantic-release config file], if you haven't already, and add the following: (JavaScript example)
 
@@ -55,7 +52,7 @@ used with each plugin, see `./src/plugins/<plugin>.js`.
 > `@myparcel-dev/semantic-release-config/npm`
 
 - [Base plugins](#base-config)
-- [@semantic-release/npm]
+- [@anolilab/semantic-release-pnpm]
 
 ### Composer
 
@@ -63,7 +60,6 @@ used with each plugin, see `./src/plugins/<plugin>.js`.
 
 - [Base plugins](#base-config)
 - [@iwavesmedia/semantic-release-composer]
-- [@semantic-release/npm]
 
 ### GitHub
 
@@ -87,7 +83,7 @@ used with each plugin, see `./src/plugins/<plugin>.js`.
 > `@myparcel-dev/semantic-release-config/github-npm`
 
 - [Base plugins](#base-config)
-- [@semantic-release/npm]
+- [@anolilab/semantic-release-pnpm]
 - [@semantic-release/github]
 - [@semantic-release/git]
 
@@ -96,7 +92,7 @@ used with each plugin, see `./src/plugins/<plugin>.js`.
 You can run the following command in your project to test your semantic-release configuration:
 
 ```shell
-npx semantic-release --dry-run --debug --branches=$(git branch --show-current)
+pnpm exec semantic-release --dry-run --debug --branches=$(git branch --show-current)
 ```
 
 Flags used:
@@ -106,11 +102,11 @@ Flags used:
 - `--branches`: Set the current branch as a release branch. If you don't pass this and are not on a release branch
   semantic-release will not process your commits.
 
+[@anolilab/semantic-release-pnpm]: https://github.com/anolilab/semantic-release/tree/main/packages/semantic-release-pnpm#readme
 [@iwavesmedia/semantic-release-composer]: https://github.com/ambimax/semantic-release-composer#readme
 [@semantic-release/changelog]: https://github.com/semantic-release/changelog
 [@semantic-release/commit-analyzer]: https://github.com/semantic-release/commit-analyzer
 [@semantic-release/git]: https://github.com/semantic-release/git
 [@semantic-release/github]: https://github.com/semantic-release/github
-[@semantic-release/npm]: https://github.com/semantic-release/npm
 [@semantic-release/release-notes-generator]: https://github.com/semantic-release/release-notes-generator
 [semantic-release config file]: https://semantic-release.gitbook.io/semantic-release/usage/configuration

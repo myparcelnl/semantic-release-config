@@ -26,21 +26,13 @@ jobs:
           fetch-depth: 0
           token: ${{ steps.credentials.outputs.token }}
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - uses: pnpm/setup@v3
         with:
-          node-version: '24'
-          registry-url: 'https://registry.npmjs.org'
-
-      - name: Enable Corepack
-        run: corepack enable
-
-      - name: Install dependencies
-        run: yarn install --immutable
+          cache: true
+          require-lockfile: true
 
       - name: Release
         env:
           GITHUB_TOKEN: ${{ steps.credentials.outputs.token }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release
+        run: pnpm exec semantic-release
