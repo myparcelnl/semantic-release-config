@@ -61,8 +61,7 @@
     "access": "public"
   },
   "engines": {
-    "node": "^24.21",
-    "pnpm": ">=12.6.0"
+    "node": "^24.21"
   },
   "devEngines": {
     "runtime": {
