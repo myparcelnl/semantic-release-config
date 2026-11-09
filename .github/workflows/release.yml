@@ -12,6 +12,9 @@ concurrency:
 jobs:
   release:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write # npm trusted publishing (OIDC) exchanges this token for a short-lived npm token
+      contents: read
     steps:
       - name: Setup Git credentials
         id: credentials
