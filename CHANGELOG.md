@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.1.0](https://github.com/myparcelnl/semantic-release-config/compare/v8.0.1...v8.1.0) (2026-11-10)
+
+### :sparkles: New Features
+
+* publish with npm trusted publishing (OIDC) ([#99](https://github.com/myparcelnl/semantic-release-config/issues/99)) ([06ce6be](https://github.com/myparcelnl/semantic-release-config/commit/06ce6be70cb4e9322a5120ad1cc5e4a62782dfdb)), references [#98](https://github.com/myparcelnl/semantic-release-config/issues/98)
+
 ## [8.0.1](https://github.com/myparcelnl/semantic-release-config/compare/v8.0.0...v8.0.1) (2026-11-10)
 
 ## [8.0.0](https://github.com/myparcelnl/semantic-release-config/compare/v7.0.4...v8.0.0) (2026-11-10)
