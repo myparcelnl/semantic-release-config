@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.0](https://github.com/myparcelnl/semantic-release-config/compare/v7.0.4...v8.0.0) (2026-11-10)
+
+### ⚠ BREAKING CHANGES
+
+* - the npm and github-npm presets publish with
+  `@anolilab/semantic-release-pnpm` instead of `@semantic-release/npm`.
+  Install the repository with pnpm and set `NPM_TOKEN` in the release job.
+  A repository that does not use pnpm stays on version 7.
+  - the package requires Node.js `^24.21`.
+
+  ---------
+
+### :sparkles: New Features
+
+* publish the npm presets with pnpm ([#98](https://github.com/myparcelnl/semantic-release-config/issues/98)) ([a5b397a](https://github.com/myparcelnl/semantic-release-config/commit/a5b397a8bb33c84ef176664d6682dc25a64274ac))
+
 ## [7.0.4](https://github.com/myparcelnl/semantic-release-config/compare/v7.0.3...v7.0.4) (2026-10-29)
 
 ## [7.0.3](https://github.com/myparcelnl/semantic-release-config/compare/v7.0.2...v7.0.3) (2026-10-21)
