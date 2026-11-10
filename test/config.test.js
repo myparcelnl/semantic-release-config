@@ -24,11 +24,11 @@ const toEntry = (pluginName) => (RESOLVED_PLUGINS.includes(pluginName) ? require
 
 const toPackageName = (entry) => RESOLVED_PLUGINS.find((pluginName) => require.resolve(pluginName) === entry) ?? entry;
 
-const NPM_RELEASE_PLUGINS = ['@semantic-release/npm', '@semantic-release/github', '@semantic-release/git'];
+const NPM_RELEASE_PLUGINS = ['@anolilab/semantic-release-pnpm', '@semantic-release/github', '@semantic-release/git'];
 
 const CONFIGS = [
   {name: 'index', config: baseConfig, plugins: BASE_PLUGINS},
-  {name: 'npm', config: require('../npm'), plugins: [...BASE_PLUGINS, '@semantic-release/npm']},
+  {name: 'npm', config: require('../npm'), plugins: [...BASE_PLUGINS, '@anolilab/semantic-release-pnpm']},
   {
     name: 'github',
     config: require('../github'),
