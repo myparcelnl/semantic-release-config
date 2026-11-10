@@ -168,10 +168,10 @@ importers:
     dependencies:
       '@anolilab/semantic-release-pnpm':
         specifier: ^8.1.36
-        version: 8.1.36(json5@2.2.3)(supports-color@7.2.0)
+        version: 8.1.37(@visulima/yaml@1.0.0)(json5@2.2.3)(supports-color@7.2.0)
       '@iwavesmedia/semantic-release-composer':
         specifier: ^1.0.0
-        version: 1.0.0
+        version: 1.1.1
       '@semantic-release/changelog':
         specifier: ^6.0.1
         version: 6.0.3(semantic-release@25.0.9(supports-color@7.2.0))
@@ -186,7 +186,7 @@ importers:
         version: 10.0.1(semantic-release@25.0.9(supports-color@7.2.0))(supports-color@7.2.0)
       '@semantic-release/github':
         specifier: ^12.0.9
-        version: 12.0.9(semantic-release@25.0.9(supports-color@7.2.0))(supports-color@7.2.0)
+        version: 12.0.10(semantic-release@25.0.9(supports-color@7.2.0))(supports-color@7.2.0)
       '@semantic-release/release-notes-generator':
         specifier: ^15.0.0-beta.3
         version: 15.0.0-beta.3(semantic-release@25.0.9(supports-color@7.2.0))(supports-color@7.2.0)
@@ -205,10 +205,10 @@ importers:
         version: 1.4.0(eslint@8.38.0(supports-color@7.2.0))
       '@myparcel-dev/eslint-config-prettier':
         specifier: ^1.4.0
-        version: 1.4.0(eslint@8.38.0(supports-color@7.2.0))(prettier@2.8.7)
+        version: 1.4.1(eslint@8.38.0(supports-color@7.2.0))(prettier@2.8.7)
       '@myparcel-dev/prettier-config':
         specifier: ^2.0.1
-        version: 2.0.1
+        version: 2.0.4
       eslint:
         specifier: ^8.38.0
         version: 8.38.0(supports-color@7.2.0)
@@ -237,8 +237,8 @@ packages:
     resolution: {integrity: sha512-e3KBrm9Fr2xCmSyKc17cWyL6jOwHJWciiSb6FbRveAmykn0vwYQT1Bf4BJNkuEhCUXNsJL1aN70czA5atzlGzw==}
     engines: {node: ^22.14.0 || >=24.10.0}
 
-  '@anolilab/semantic-release-pnpm@8.1.36':
-    resolution: {integrity: sha512-oPvhZuZ0YlKUSLBpcGvqtmVp61cAXXo0pYUNT3gKF6QE3oCSMy2kLvHDoSGxm6qEcpK2F8VRF5FLXAjcBu10cw==}
+  '@anolilab/semantic-release-pnpm@8.1.37':
+    resolution: {integrity: sha512-Sph1jRQnw3+//dfq5qqAK9Fmim1jvN7KP+EHYtQStMBui2myQha++LbuynT89Ev7WHhGp5Ec6ydni3BpksfVDQ==}
     engines: {node: ^22.14.0 || >=24.10.0}
 
   '@antfu/install-pkg@2.1.0':
@@ -291,8 +291,8 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     deprecated: Use @eslint/object-schema instead
 
-  '@iwavesmedia/semantic-release-composer@1.0.0':
-    resolution: {integrity: sha512-DXT1ghphZrfsRvdnNkwRadEbXHxkBwEWhJLlIhEnAlJl61kg1PJB7p0hok48wNVe86glUbElABziWC8YUcvzyw==}
+  '@iwavesmedia/semantic-release-composer@1.1.1':
+    resolution: {integrity: sha512-gSyoUGQv3iB327krxjiMWBmiN5WZ2poj5d/EmdwfzHJipzPJgy/sPYW26IMhXyF4gtFi8TPvnJVH3TjFeMTR0A==}
 
   '@myparcel-dev/eslint-config-es6@1.4.0':
     resolution: {integrity: sha512-qVM8QG8lYpmLFpi7lMjcL2Peki1FvxD83EOWv/7lDVyINqXnO8+g75mdMkVrHMmQBRh2j1xGPPHL+8GwUGm4zg==}
@@ -309,8 +309,8 @@ packages:
     peerDependencies:
       eslint: 7 - 8
 
-  '@myparcel-dev/eslint-config-prettier@1.4.0':
-    resolution: {integrity: sha512-GU4SYGsBIE3US0sfA1N8ZIlgAZE9QaLU7HuaL2D2rCvaN15Aqu6IKzPsmywq2xU92qcjAs5dI/41/WhYGO5KKA==}
+  '@myparcel-dev/eslint-config-prettier@1.4.1':
+    resolution: {integrity: sha512-HniDl+0ggRoBa95f0ERg/c4PO9fRngmwzQjKNUzOaj+VghTAJuGhUmEXt4RUqfEHfYRMVW2AhqMo4OtyqToKfg==}
     peerDependencies:
       eslint: 7 - 8
       prettier: '>= 2'
@@ -320,12 +320,8 @@ packages:
     peerDependencies:
       eslint: 7 - 8
 
-  '@myparcel-dev/prettier-config@2.0.1':
-    resolution: {integrity: sha512-DdjtbGOdWnDDomnc+4mnhHi7ZPVZ+vJw6o5JibMn79MpNtER9gDVeiXOnO/sV7EzmIW6u5CDTdrrj62K5vBFug==}
-
-  '@myparcel/prettier-config@1.1.0':
-    resolution: {integrity: sha512-qvVz0iE4mj6rQplYkpOCmcaYftDzKC3I7w/lbqnHJfMXTjetK69aHe+SwELBJq55CBJ+3H1l7uR2TDgn+a7INQ==}
-    deprecated: 'DEPRECATED: Will be moved to @myparcel-dev/prettier-config'
+  '@myparcel-dev/prettier-config@2.0.4':
+    resolution: {integrity: sha512-TCfVLsgfsgXPsy3MZ4zqIO71Th+gfvLPoAZ71vUOg8S0DOUgrn2ijME5HpBM2bbRezJCpXETVEBB40PYubE9Cw==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -355,17 +351,14 @@ packages:
     resolution: {integrity: sha512-bt/hm03LeU6Vy7FwTrkkC9p3XGT/lBwClglMqxBSe5/q0E5CdJTXeAqEI0vlw89/LF/G6tryTIH8HirZ3prMVg==}
     engines: {node: '>= 20'}
 
-  '@octokit/openapi-types@27.0.0':
-    resolution: {integrity: sha512-whrdktVs1h6gtR+09+QsNk2+FO+49j6ga1c55YZudfEG+oKJVvJLQi3zkOm5JjiUXAagWK2tI2kTGKJ2Ys7MGA==}
-
   '@octokit/openapi-types@28.0.0':
     resolution: {integrity: sha512-0rFyLuyHvIj6uuZWuDslxkowFYdPXoNIkeAv4b27dzm2Tf4vGWXnPsMcxs7d65kLdMERgP3wc1AEPlqMz8e1cQ==}
 
   '@octokit/openapi-types@29.0.1':
     resolution: {integrity: sha512-9qWOMFNxxLokERcms42rU0PTLqQmVs7g5E41TI4mCOxmpFayD1rfC7XxOL55cG9MBZLFlC31BrR37myMKardwg==}
 
-  '@octokit/plugin-paginate-rest@14.0.0':
-    resolution: {integrity: sha512-fNVRE7ufJiAA3XUrha2omTA39M6IXIc6GIZLvlbsm8QOQCYvpq/LkMNGyFlB1d8hTDzsAXa3OKtybdMAYsV/fw==}
+  '@octokit/plugin-paginate-rest@15.0.0':
+    resolution: {integrity: sha512-lw9A9YL5s4VPj+VEx8uMxaxQm2YTgrPDkrLEuZuu18R8TK3oPcXF4K6t52nx6xn1RcogZC9i188sAr/4XYJaQQ==}
     engines: {node: '>= 20'}
     peerDependencies:
       '@octokit/core': '>=6'
@@ -389,9 +382,6 @@ packages:
   '@octokit/request@10.0.16':
     resolution: {integrity: sha512-A0zWGjHzISIb+9ccG8s0dq7LKO5zVpJLRICjgUb+sJxEWqn8RUHB1rD3AE51+PECvXHIxqZ1VVvs4fHTSD9nUQ==}
     engines: {node: '>= 20'}
-
-  '@octokit/types@16.0.0':
-    resolution: {integrity: sha512-sKq+9r1Mm4efXW1FCk7hFSeJo4QKreL/tTbR0rz/qx/r1Oa2VV83LTA/H/MuCOX7uCIJmQVRKBcbmWoySjAnSg==}
 
   '@octokit/types@17.0.0':
     resolution: {integrity: sha512-ByP1v7YL5SMveFPP7+sj0/ZuWCOOg/Chs4NafOMpq6WNIM/hdGY0S7C0TCGDBWu1aGmOxmUIhMx3cO+IdwYZ1Q==}
@@ -455,8 +445,8 @@ packages:
     peerDependencies:
       semantic-release: '>=18.0.0'
 
-  '@semantic-release/github@12.0.9':
-    resolution: {integrity: sha512-ODIqb0V3QqndipryEEiaBxUQCFjvv7Oese5Dt4omMGa60YRNEW0Sx3K+zri0uac2Y6S9nOlMehciWIzvvRCTGQ==}
+  '@semantic-release/github@12.0.10':
+    resolution: {integrity: sha512-QskygvpX8hFx9UEbqJ+C46OIhaJjsysNQ8PYJPuRDc/ek5+dh8WYGD1ofUahCcGLAOmnnwZTcmCJCEXM8XxhRw==}
     engines: {node: ^22.14.0 || >= 24.10.0}
     peerDependencies:
       semantic-release: '>=24.1.0'
@@ -498,17 +488,19 @@ packages:
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
 
-  '@visulima/fs@5.1.0':
-    resolution: {integrity: sha512-KJmLA9iJAwx+GOhjLT1kcqBhY/s1uOU8eJrBz+TeyZX0h2p5USYKHlNd1p+VaB4/9ltl1MR4oRuXgY5jLP0vOA==}
+  '@visulima/fs@6.1.0':
+    resolution: {integrity: sha512-t+yQaST3uNKYOW3ekZ4wD5jHteDZURiBUu5M3YXoVSNqciTMBpbIsugQlw1TqdIs3cU67uYU65qEQ78IHnGjRA==}
     engines: {node: ^22.14.0 || >=24.10.0}
     os: [darwin, linux, win32]
     peerDependencies:
+      '@visulima/yaml': 1.0.0
       ini: ^7.0.0
       json5: ^2.2.3
       jsonc-parser: ^3.3.1
-      smol-toml: ^1.7.0
-      yaml: '>=2.9.0'
+      smol-toml: ^1.8.1
     peerDependenciesMeta:
+      '@visulima/yaml':
+        optional: true
       ini:
         optional: true
       json5:
@@ -517,15 +509,13 @@ packages:
         optional: true
       smol-toml:
         optional: true
-      yaml:
-        optional: true
 
-  '@visulima/fs@6.1.0':
-    resolution: {integrity: sha512-t+yQaST3uNKYOW3ekZ4wD5jHteDZURiBUu5M3YXoVSNqciTMBpbIsugQlw1TqdIs3cU67uYU65qEQ78IHnGjRA==}
+  '@visulima/fs@7.0.0':
+    resolution: {integrity: sha512-6XPkHW+d4t8jZjXl7a9r7DjvoMPjbzVbQVklmHQmvDYaSAYX5jEpBrAL4ZpuS9voSw2Mfzj8cccaZuGcMZYkyA==}
     engines: {node: ^22.14.0 || >=24.10.0}
     os: [darwin, linux, win32]
     peerDependencies:
-      '@visulima/yaml': 1.0.0
+      '@visulima/yaml': 2.0.0
       ini: ^7.0.0
       json5: ^2.2.3
       jsonc-parser: ^3.3.1
@@ -554,6 +544,11 @@ packages:
 
   '@visulima/path@4.0.0':
     resolution: {integrity: sha512-M9cTzZNtTbOl975YAgUzzzwg9xOMqqC2Y2Jy1uFDQufK0sBNgbFnvR0o14jIfNDxACXyhEN3DSuFa4W7U7Hf2g==}
+    engines: {node: ^22.14.0 || >=24.10.0}
+    os: [darwin, linux, win32]
+
+  '@visulima/path@5.0.0':
+    resolution: {integrity: sha512-4OBtMLJYmAWPHMxqpC2yijvdq1DLyX8aiG5H/qQLBHaeh7H2vCDGamXGA3hi9zvcA7NULAXpgLjQIHHgt5p1eQ==}
     engines: {node: ^22.14.0 || >=24.10.0}
     os: [darwin, linux, win32]
 
@@ -2151,12 +2146,12 @@ snapshots:
       ini: 7.0.0
       ts-deepmerge: 8.0.0
 
-  '@anolilab/semantic-release-pnpm@8.1.36(json5@2.2.3)(supports-color@7.2.0)':
+  '@anolilab/semantic-release-pnpm@8.1.37(@visulima/yaml@1.0.0)(json5@2.2.3)(supports-color@7.2.0)':
     dependencies:
       '@actions/core': 3.0.1
       '@anolilab/rc': 4.0.9
       '@semantic-release/error': 4.0.0
-      '@visulima/fs': 5.1.0(ini@7.0.0)(json5@2.2.3)
+      '@visulima/fs': 7.0.0(@visulima/yaml@1.0.0)(ini@7.0.0)(json5@2.2.3)
       '@visulima/package': 5.0.43(ini@7.0.0)
       '@visulima/path': 3.1.0
       debug: 4.4.3(supports-color@7.2.0)
@@ -2168,11 +2163,11 @@ snapshots:
       registry-auth-token: 5.1.1
       semver: 7.8.5
     transitivePeerDependencies:
+      - '@visulima/yaml'
       - json5
       - jsonc-parser
       - smol-toml
       - supports-color
-      - yaml
 
   '@antfu/install-pkg@2.1.0':
     dependencies:
@@ -2227,7 +2222,7 @@ snapshots:
 
   '@humanwhocodes/object-schema@1.2.1': {}
 
-  '@iwavesmedia/semantic-release-composer@1.0.0':
+  '@iwavesmedia/semantic-release-composer@1.1.1':
     dependencies:
       '@semantic-release/error': 2.2.0
 
@@ -2246,9 +2241,8 @@ snapshots:
       '@myparcel-dev/eslint-config': 1.4.0(eslint@8.38.0(supports-color@7.2.0))
       eslint: 8.38.0(supports-color@7.2.0)
 
-  '@myparcel-dev/eslint-config-prettier@1.4.0(eslint@8.38.0(supports-color@7.2.0))(prettier@2.8.7)':
+  '@myparcel-dev/eslint-config-prettier@1.4.1(eslint@8.38.0(supports-color@7.2.0))(prettier@2.8.7)':
     dependencies:
-      '@myparcel/prettier-config': 1.1.0
       eslint: 8.38.0(supports-color@7.2.0)
       eslint-config-prettier: 8.10.2(eslint@8.38.0(supports-color@7.2.0))
       eslint-plugin-prettier: 4.2.5(eslint-config-prettier@8.10.2(eslint@8.38.0(supports-color@7.2.0)))(eslint@8.38.0(supports-color@7.2.0))(prettier@2.8.7)
@@ -2258,9 +2252,7 @@ snapshots:
     dependencies:
       eslint: 8.38.0(supports-color@7.2.0)
 
-  '@myparcel-dev/prettier-config@2.0.1': {}
-
-  '@myparcel/prettier-config@1.1.0': {}
+  '@myparcel-dev/prettier-config@2.0.4': {}
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -2297,16 +2289,14 @@ snapshots:
       '@octokit/types': 18.0.0
       universal-user-agent: 7.0.3
 
-  '@octokit/openapi-types@27.0.0': {}
-
   '@octokit/openapi-types@28.0.0': {}
 
   '@octokit/openapi-types@29.0.1': {}
 
-  '@octokit/plugin-paginate-rest@14.0.0(@octokit/core@7.0.8)':
+  '@octokit/plugin-paginate-rest@15.0.0(@octokit/core@7.0.8)':
     dependencies:
       '@octokit/core': 7.0.8
-      '@octokit/types': 16.0.0
+      '@octokit/types': 17.0.0
 
   '@octokit/plugin-retry@8.1.1(@octokit/core@7.0.8)':
     dependencies:
@@ -2333,10 +2323,6 @@ snapshots:
       content-type: 3.1.0
       json-with-bigint: 3.5.12
       universal-user-agent: 7.0.3
-
-  '@octokit/types@16.0.0':
-    dependencies:
-      '@octokit/openapi-types': 27.0.0
 
   '@octokit/types@17.0.0':
     dependencies:
@@ -2428,10 +2414,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@semantic-release/github@12.0.9(semantic-release@25.0.9(supports-color@7.2.0))(supports-color@7.2.0)':
+  '@semantic-release/github@12.0.10(semantic-release@25.0.9(supports-color@7.2.0))(supports-color@7.2.0)':
     dependencies:
       '@octokit/core': 7.0.8
-      '@octokit/plugin-paginate-rest': 14.0.0(@octokit/core@7.0.8)
+      '@octokit/plugin-paginate-rest': 15.0.0(@octokit/core@7.0.8)
       '@octokit/plugin-retry': 8.1.1(@octokit/core@7.0.8)
       '@octokit/plugin-throttling': 11.0.5(@octokit/core@7.0.8)
       '@semantic-release/error': 4.0.0
@@ -2510,16 +2496,17 @@ snapshots:
 
   '@types/normalize-package-data@2.4.4': {}
 
-  '@visulima/fs@5.1.0(ini@7.0.0)(json5@2.2.3)':
-    dependencies:
-      '@visulima/path': 3.1.0
-    optionalDependencies:
-      ini: 7.0.0
-      json5: 2.2.3
-
   '@visulima/fs@6.1.0(@visulima/yaml@1.0.0)(ini@7.0.0)(json5@2.2.3)':
     dependencies:
       '@visulima/path': 4.0.0
+    optionalDependencies:
+      '@visulima/yaml': 1.0.0
+      ini: 7.0.0
+      json5: 2.2.3
+
+  '@visulima/fs@7.0.0(@visulima/yaml@1.0.0)(ini@7.0.0)(json5@2.2.3)':
+    dependencies:
+      '@visulima/path': 5.0.0
     optionalDependencies:
       '@visulima/yaml': 1.0.0
       ini: 7.0.0
@@ -2541,6 +2528,8 @@ snapshots:
   '@visulima/path@3.1.0': {}
 
   '@visulima/path@4.0.0': {}
+
+  '@visulima/path@5.0.0': {}
 
   '@visulima/yaml@1.0.0': {}
 
@@ -3558,7 +3547,7 @@ snapshots:
     dependencies:
       '@semantic-release/commit-analyzer': 13.0.1(semantic-release@25.0.9(supports-color@7.2.0))(supports-color@7.2.0)
       '@semantic-release/error': 4.0.0
-      '@semantic-release/github': 12.0.9(semantic-release@25.0.9(supports-color@7.2.0))(supports-color@7.2.0)
+      '@semantic-release/github': 12.0.10(semantic-release@25.0.9(supports-color@7.2.0))(supports-color@7.2.0)
       '@semantic-release/npm': 13.1.5(semantic-release@25.0.9(supports-color@7.2.0))
       '@semantic-release/release-notes-generator': 14.1.1(semantic-release@25.0.9(supports-color@7.2.0))(supports-color@7.2.0)
       aggregate-error: 5.0.0
