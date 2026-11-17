@@ -61,7 +61,7 @@
     "access": "public"
   },
   "engines": {
-    "node": "^24.21"
+    "node": ">=24.21"
   },
   "devEngines": {
     "runtime": {
