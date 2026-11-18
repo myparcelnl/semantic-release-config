@@ -37,5 +37,4 @@ jobs:
       - name: Release
         env:
           GITHUB_TOKEN: ${{ steps.credentials.outputs.token }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: pnpm exec semantic-release

@@ -13,8 +13,14 @@ Install the package with pnpm:
 pnpm add -D @myparcel-dev/semantic-release-config
 ```
 
-The `npm` and `github-npm` presets publish with pnpm, through [@anolilab/semantic-release-pnpm]. Set the `NPM_TOKEN`
-environment variable in the release job. A repository that does not use pnpm stays on version 7 of this package.
+The `npm` and `github-npm` presets publish with pnpm, through [@anolilab/semantic-release-pnpm], with npm trusted
+publishing (OIDC). They need no `NPM_TOKEN`. A repository that uses them needs:
+
+- `id-token: write` in the `permissions` of the release job;
+- a `repository` field in `package.json` that names the GitHub repository;
+- a trusted publisher for the package on npmjs.com, with the filename of the release workflow and "Allow npm publish".
+
+A repository that does not use pnpm stays on version 7 of this package.
 
 Create a [semantic-release config file], if you haven't already, and add the following: (JavaScript example)
 
