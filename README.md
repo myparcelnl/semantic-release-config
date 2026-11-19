@@ -93,6 +93,21 @@ used with each plugin, see `./src/plugins/<plugin>.js`.
 - [@semantic-release/github]
 - [@semantic-release/git]
 
+## A new package
+
+npm accepts a trusted publisher only for a package that already exists on npmjs.com. The first release of a new
+package therefore cannot go through the release workflow:
+
+1. Publish the first version from your own machine with `pnpm publish --access public`, logged in with an npm account
+   in the `myparcel-dev` organization. npm asks for 2FA.
+2. Add the trusted publisher on npmjs.com: GitHub Actions, the repository, the filename of the release workflow, and
+   "Allow npm publish". Or run `npm trust github <package> --repo <owner>/<repo> --file <workflow>.yml --allow-publish`
+   outside a pnpm repository, because `devEngines` stops npm there.
+3. Release through the workflow within 48 hours. A trusted publisher without a successful publish expires after 48
+   hours.
+4. In the settings of the package on npmjs.com, set "Publishing access" to "Require two-factor authentication and
+   disallow tokens". Trusted publishing keeps working with this setting.
+
 ## Debugging
 
 You can run the following command in your project to test your semantic-release configuration:
